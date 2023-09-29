@@ -1,0 +1,90 @@
+h1{
+    font-size: 1.1rem;
+}
+#creater{
+    font-size: 0.5rem;
+}
+#side_straight p,
+#side_circle p,
+#side_parabola p,
+#side_ellipse p,
+#side_hyperbola p,
+#side_limit p,
+#side_differentiation p,
+#side_application_differentiation p,
+#side_indefinite_integration p,
+#side_definite_integration p, 
+#side_fundamentals p,
+#side_quadratic p,
+#side_sequence p,
+#side_binomial p,
+#side_permutation p,
+#side_probability p,
+#side_complex p,
+#side_vector p,
+#side_dimension p,
+#side_triangle p,
+#side_inverse_trigono p,
+#side_statistic p,
+#side_resoning p,
+#side_set p{
+    font-size: 0.7rem;
+}
+#menu_item li{
+    font-size: 0.7rem;
+}
+#content *{
+    font-size: 0.7rem;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+.loader1 span{
+    font-size: 1.2rem;
+}
+.side0.active_side{
+    width: 35vw;
+}
+#menu{
+    height: 4.5vh;
+}
+#menu span{
+    margin: 0.5vh;
+}
+#l_btn,
+#r_btn{
+    scale: 1;
+}
+#search_tab{
+    width: 20vw;
+    height: 2.2vh;
+    font-size: 0.5rem;
+}
+::placeholder{
+    font-size: 0.6rem;
+}
+#open_or_close{
+    height: 15px;
+    width: 100px;
+}
+.item1{
+    transform: translate(0%,480%) rotate(-45deg);
+    width: 150%;
+}
+.item3{
+    transform: translate(0%,-480%) rotate(45deg);
+    width: 150%;
+}
+#feedback{
+    left: 95%;
+    width: 9vw;
+    height: 4vh;
+}
+.modal{
+    overflow-y: hidden;
+}
+#f_img{
+    height: 16px;
+    width: 50px;
+    padding: 2px;
+}

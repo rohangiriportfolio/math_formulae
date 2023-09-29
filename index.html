@@ -1,0 +1,1645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Formulae By Rohan Giri</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="index_phone.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("hMZT569V4PbGjmyp6");
+        })();
+    </script>
+    <!-- <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+    <link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+    <script src="https://tikzjax.com/v1/tikzjax.js"></script> -->
+    <script>
+        MathJax = {
+            //   tex: {
+            //     inlineMath: [['$', '$'], ['\\(', '\\)']],
+            //     tags: 'ams'
+            //   },
+            svg: {
+                fontCache: 'global',
+                displayAlign: 'left',
+                displayIndent: '1.5em'
+            }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+
+<body>
+    <!-- <div class="loader">
+        
+    </div> -->
+    <div class="loader1">
+        <span style="color: blueviolet;" class="s1">M</span>
+        <span style="color: white;" class="s1">a</span>
+        <span style="color: white;" class="s1">t</span>
+        <span style="color: white;" class="s1">h &nbsp;</span>
+        <span style="color: blueviolet;" class="s1">F</span>
+        <span style="color: white;" class="s1">o</span>
+        <span style="color: white;" class="s1">r</span>
+        <span style="color: white;" class="s1">m</span>
+        <span style="color: white;" class="s1">u</span>
+        <span style="color: white;" class="s1">l</span>
+        <span style="color: white;" class="s1">a</span>
+        <span style="color: white;" class="s1">e</span>
+    </div>
+
+    <div id="feedback">
+        <a href="#popup_box"><img src="Your paragraph text (1).png" id="f_img"></i></a>
+    </div>
+    <div id="popup_box" class="modal">
+        <div id="con">
+            <a href="#" id="box-close">
+                <i class="fa fa-close"></i>
+            </a>
+            <form id="contact_form">
+                <p style="margin-bottom: 15px; font-size: 1.2rem;"><span style="color: blueviolet;">G</span><span
+                        style="color: #c2c2c2;">ive </span><span style="color: blueviolet;">Y</span><span
+                        style="color: #c2c2c2;">our </span><span style="color: blueviolet;">F</span><span
+                        style="color: #c2c2c2;">eedback</span><span style="color: blueviolet;"> !</span><span
+                        style="color: #c2c2c2;">!</span></p>
+                <input required type="text" name="Your Name" id="name" placeholder="&#xf007; Name" class="inputs"
+                    style="font-family:Arial, FontAwesome">
+                <input required type="text" name="Your Email" id="email" placeholder="&#xf0e0; Email ID" class="inputs"
+                    style="font-family:Arial, FontAwesome">
+                <input required type="text" name="Your Address" id="address" placeholder="&#xf041; Address"
+                    class="inputs" style="font-family:Arial, FontAwesome">
+                <input required type="text" name="Your Feedback" id="feed" placeholder="&#xf27a; Comments"
+                    class="inputs" style="font-family:Arial, FontAwesome">
+                <div id="submit_or_reset">
+                    <input type="reset" value="Reset">
+                    <button id="submit" onclick="submitemail()">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <h1><span id="heading"><span style="color: blueviolet;" class="f_alphabet">M</span><span
+                style="color: gray;">ATH</span>&nbsp;&nbsp;<span style="color: blueviolet;" class="f_alphabet">
+                F</span><span style="color: gray;">ORMULAE</span></span> <span id="creater"><span
+                style="color: rgb(83, 83, 83);">D</span>esigned <span style="color: rgb(83, 83, 83);">B</span>y <b><em>
+                    <span style="color: blueviolet;">R</span>&#xf4h&#x40n
+                    <span style="color: blueviolet;">G</span>&#x0129r&#x012D</em></b> &#xa0</span></h1>
+    <!-- <p><span class="math display">\[r = \frac{\sum_{i=1}^{n}(x_i -
+            \bar{x})(y_i - \bar{y})}{\sqrt[]{\sum_{i=1}^{n}(x_i - \bar{x})^2
+            \sum_{i=1}^{n}(y_i - \bar{y})^2}}\]</span></p> -->
+    <!-- <span>&radic;<span style="text-decoration:overline;">&nbsp;X + 1&nbsp;</span></span> -->
+    <div id="menu">
+        <div id="open_or_close" class="o_or_c" onclick="op_or_cl()">
+            <div class="item1"></div>
+            <div class="item2"></div>
+            <div class="item3"></div>
+        </div>
+        <span id="l_btn" onmousedown="startScrolling1()" onmouseup="stopScrolling1()" onmouseleave="stopScrolling1()"><i
+                class="fa fa-angle-double-left"></i></span>
+        <ul id="menu_item">
+            <li style="border-left: none;"><a href="#"
+                    onclick="open_content('straight'),open_side_content('side_straight')"
+                    class="content_link active_link">Straight Line</a></li>
+            <li><a href="#" onclick="open_content('circle'),open_side_content('side_circle')"
+                    class="content_link">Circle</a></li>
+            <li><a href="#" onclick="open_content('parabola'),open_side_content('side_parabola')"
+                    class="content_link">Parabola</a></li>
+            <li><a href="#" onclick="open_content('ellipse'),open_side_content('side_ellipse')"
+                    class="content_link">Ellipse</a></li>
+            <li><a href="#" onclick="open_content('hyperbola'),open_side_content('side_hyperbola')"
+                    class="content_link">Hyperbola</a></li>
+            <li><a href="#" onclick="open_content('limit'),open_side_content('side_limit')" class="content_link">Limit
+                    of Function</a></li>
+            <li><a href="#" onclick="open_content('differentiation'),open_side_content('side_differentiation')"
+                    class="content_link">Method of Differentiation</a></li>
+            <li><a href="#"
+                    onclick="open_content('application_differentiation'),open_side_content('side_application_differentiation')"
+                    class="content_link">Application of Derivatives</a></li>
+            <li><a href="#"
+                    onclick="open_content('indefinite_integration'),open_side_content('side_indefinite_integration')"
+                    class="content_link">Indefinite Integration</a></li>
+            <li><a href="#"
+                    onclick="open_content('definite_integration'),open_side_content('side_definite_integration')"
+                    class="content_link">Definite Integration</a></li>
+            <li><a href="#" onclick="open_content('fundamentals'),open_side_content('side_fundamentals')"
+                    class="content_link">Fundamentals of Mathematics</a></li>
+            <li><a href="#" onclick="open_content('quadratic'),open_side_content('side_quadratic')"
+                    class="content_link">Quadratic Equation</a></li>
+            <li><a href="#" onclick="open_content('sequence'),open_side_content('side_sequence')"
+                    class="content_link">Sequence and Series</a></li>
+            <li><a href="#" onclick="open_content('binomial'),open_side_content('side_binomial')"
+                    class="content_link">Binomial Theorem</a></li>
+            <li><a href="#" onclick="open_content('permutation'),open_side_content('side_permutation')"
+                    class="content_link">Permutation & Combination</a></li>
+            <li><a href="#" onclick="open_content('probability'),open_side_content('side_probability')"
+                    class="content_link">Probability</a></li>
+            <li><a href="#" onclick="open_content('complex'),open_side_content('side_complex')"
+                    class="content_link">Complex Number</a></li>
+            <li><a href="#" onclick="open_content('vector'),open_side_content('side_vector')"
+                    class="content_link">Vectors</a></li>
+            <li><a href="#" onclick="open_content('dimension'),open_side_content('side_dimension')"
+                    class="content_link">Dimensions</a></li>
+            <li><a href="#" onclick="open_content('triangle'),open_side_content('side_triangle')"
+                    class="content_link">Solution of Triangle</a></li>
+            <li><a href="#" onclick="open_content('inverse_trigono'),open_side_content('side_inverse_trigono')"
+                    class="content_link">Inverse Trigonometry</a></li>
+            <li><a href="#" onclick="open_content('statistic'),open_side_content('side_statistic')"
+                    class="content_link">Statistics</a></li>
+            <li><a href="#" onclick="open_content('resoning'),open_side_content('side_resoning')"
+                    class="content_link">Mathematical Resoning</a></li>
+            <li style="border-right: none;"><a href="#" onclick="open_content('set'),open_side_content('side_set')"
+                    class="content_link">Sets & Relations</a></li>
+        </ul>
+        <span id="r_btn" onmousedown="startScrolling()" onmouseup="stopScrolling()" onmouseleave="stopScrolling()"><i
+                class="fa fa-angle-double-right"></i></span>
+        <span style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+            <input id="search_tab" style="font-family: Arial, FontAwesome" type="text"
+                placeholder="&#xF002;    Search Formulae" onkeyup="search()">
+            </input>
+        </span>
+    </div>
+    <div id="main">
+        <div id="side">
+            <div class="side0 active_side" id="side_straight">
+                <p onclick="open_sub_content('a1','_1a'), colorchange('ab1','1ab')" class="1ab" id="ab1"
+                    style="color: rgb(195, 131, 255);">Distance Formula</p>
+                <p onclick="open_sub_content('a2','_1a'), colorchange('ab2','1ab')" class="1ab" id="ab2">Section Formula
+                </p>
+                <p onclick="open_sub_content('a3','_1a'), colorchange('ab3','1ab')" class="1ab" id="ab3">Centroid,
+                    Incentre & Excentre</p>
+                <p onclick="open_sub_content('a4','_1a'), colorchange('ab4','1ab')" class="1ab" id="ab4">Area of a
+                    Triangle</p>
+                <p onclick="open_sub_content('a5','_1a'), colorchange('ab5','1ab')" class="1ab" id="ab5">Slope Formula
+                </p>
+                <p onclick="open_sub_content('a6','_1a'), colorchange('ab6','1ab')" class="1ab" id="ab6">Condition of
+                    collinearity of three points</p>
+                <p onclick="open_sub_content('a7','_1a'), colorchange('ab7','1ab')" class="1ab" id="ab7">Angle between
+                    two straight lines</p>
+                <p onclick="open_sub_content('a8','_1a'), colorchange('ab8','1ab')" class="1ab" id="ab8">Two Lines</p>
+                <p onclick="open_sub_content('a9','_1a'), colorchange('ab9','1ab')" class="1ab" id="ab9">A point and
+                    line</p>
+                <p onclick="open_sub_content('a10','_1a'), colorchange('ab10','1ab')" class="1ab" id="ab10">Bisectors of
+                    the angles between two lines</p>
+                <p onclick="open_sub_content('a11','_1a'), colorchange('ab11','1ab')" class="1ab" id="ab11">Condition of
+                    Concurrency</p>
+                <p onclick="open_sub_content('a12','_1a'), colorchange('ab12','1ab')" class="1ab" id="ab12">A pair of
+                    straight lines through origin</p>
+            </div>
+            <div class="side0" id="side_circle">
+                <p onclick="open_sub_content('a13','_2a'), colorchange('ab13','2ab')" class="2ab" id="ab13"
+                    style="color: rgb(195, 131, 255);">Intercepts made by Circle</p>
+                <p onclick="open_sub_content('a14','_2a'), colorchange('ab14','2ab')" class="2ab" id="ab14">Parametric
+                    Equations of a Circle</p>
+                <p onclick="open_sub_content('a15','_2a'), colorchange('ab15','2ab')" class="2ab" id="ab15">Tangent</p>
+                <p onclick="open_sub_content('a16','_2a'), colorchange('ab16','2ab')" class="2ab" id="ab16">Pair of
+                    Tangents from a Point</p>
+                <p onclick="open_sub_content('a17','_2a'), colorchange('ab17','2ab')" class="2ab" id="ab17">Length of a
+                    Tangent</p>
+                <p onclick="open_sub_content('a18','_2a'), colorchange('ab18','2ab')" class="2ab" id="ab18">Center at
+                    some point</p>
+                <p onclick="open_sub_content('a19','_2a'), colorchange('ab19','2ab')" class="2ab" id="ab19">Director
+                    Circle</p>
+                <p onclick="open_sub_content('a20','_2a'), colorchange('ab20','2ab')" class="2ab" id="ab20">Chord of
+                    Contact</p>
+                <p onclick="open_sub_content('a21','_2a'), colorchange('ab21','2ab')" class="2ab" id="ab21">Condition of
+                    orthogonality of Two Circles</p>
+                <p onclick="open_sub_content('a22','_2a'), colorchange('ab22','2ab')" class="2ab" id="ab22">Radical Axis
+                </p>
+                <p onclick="open_sub_content('a23','_2a'), colorchange('ab23','2ab')" class="2ab" id="ab23">Family of
+                    Circles</p>
+            </div>
+            <div class="side0" id="side_parabola">
+                <p onclick="open_sub_content('a24','_3a'), colorchange('ab24','3ab')" class="3ab" id="ab24"
+                    style="color: rgb(195, 131, 255);">All equations of Parabola</p>
+                <p onclick="open_sub_content('a25','_3a'), colorchange('ab25','3ab')" class="3ab" id="ab25">Parametric
+                    Representation</p>
+                <p onclick="open_sub_content('a26','_3a'), colorchange('ab26','3ab')" class="3ab" id="ab26">Tangents to
+                    the Parabola</p>
+                <p onclick="open_sub_content('a27','_3a'), colorchange('ab27','3ab')" class="3ab" id="ab27">Normals to
+                    the Parabola</p>
+            </div>
+            <div class="side0" id="side_ellipse">
+                <p onclick="open_sub_content('a28','_4a'), colorchange('ab28','4ab')" class="4ab" id="ab28"
+                    style="color: rgb(195, 131, 255);">All equations of Ellipse</p>
+                <p onclick="open_sub_content('a29','_4a'), colorchange('ab29','4ab')" class="4ab" id="ab29">Auxiliary
+                    Circle</p>
+                <p onclick="open_sub_content('a30','_4a'), colorchange('ab30','4ab')" class="4ab" id="ab30">Parametric
+                    Representation</p>
+                <p onclick="open_sub_content('a31','_4a'), colorchange('ab31','4ab')" class="4ab" id="ab31">Position of
+                    a Point w.r.t. an Ellipse</p>
+                <p onclick="open_sub_content('a32','_4a'), colorchange('ab32','4ab')" class="4ab" id="ab32">Tangents</p>
+                <p onclick="open_sub_content('a33','_4a'), colorchange('ab33','4ab')" class="4ab" id="ab33">Normals</p>
+                <p onclick="open_sub_content('a34','_4a'), colorchange('ab34','4ab')" class="4ab" id="ab34">Director
+                    Circle</p>
+            </div>
+            <div class="side0" id="side_hyperbola">
+                <p onclick="open_sub_content('a35','_5a'), colorchange('ab35','5ab')" class="5ab" id="ab35"
+                    style="color: rgb(195, 131, 255);">All equations of Hyperbola</p>
+                <p onclick="open_sub_content('a36','_5a'), colorchange('ab36','5ab')" class="5ab" id="ab36">Auxiliary
+                    Circle</p>
+                <p onclick="open_sub_content('a37','_5a'), colorchange('ab37','5ab')" class="5ab" id="ab37">Parametric
+                    Representation</p>
+                <p onclick="open_sub_content('a38','_5a'), colorchange('ab38','5ab')" class="5ab" id="ab38">Position of
+                    a Point w.r.t. an Hyperbola</p>
+                <p onclick="open_sub_content('a39','_5a'), colorchange('ab39','5ab')" class="5ab" id="ab39">Tangents</p>
+                <p onclick="open_sub_content('a40','_5a'), colorchange('ab40','5ab')" class="5ab" id="ab40">Normals</p>
+            </div>
+            <div class="side0" id="side_limit">
+                <p onclick="open_sub_content('a41','_6a'), colorchange('ab41','6ab')" class="6ab" id="ab41"
+                    style="color: rgb(195, 131, 255);">Existance of Limit</p>
+                <p onclick="open_sub_content('a42','_6a'), colorchange('ab42','6ab')" class="6ab" id="ab42">
+                    Indeterminate Forms</p>
+                <p onclick="open_sub_content('a43','_6a'), colorchange('ab43','6ab')" class="6ab" id="ab43">Standard
+                    Limits</p>
+                <p onclick="open_sub_content('a44','_6a'), colorchange('ab44','6ab')" class="6ab" id="ab44">Limits Using
+                    Expansion</p>
+            </div>
+            <div class="side0" id="side_differentiation">
+                <p onclick="open_sub_content('a45','_7a'), colorchange('ab45','7ab')" class="7ab" id="ab45"
+                    style="color: rgb(195, 131, 255);">Differentiation of some elementary function</p>
+                <p onclick="open_sub_content('a46','_7a'), colorchange('ab46','7ab')" class="7ab" id="ab46">Basic
+                    Theorems</p>
+                <p onclick="open_sub_content('a47','_7a'), colorchange('ab47','7ab')" class="7ab" id="ab47">
+                    Differentiation using substitution</p>
+                <p onclick="open_sub_content('a48','_7a'), colorchange('ab48','7ab')" class="7ab" id="ab48">Parametric
+                    Differentiation</p>
+                <p onclick="open_sub_content('a49','_7a'), colorchange('ab49','7ab')" class="7ab" id="ab49">Derivative
+                    of one function with respect to another</p>
+            </div>
+            <div class="side0" id="side_application_differentiation">
+                <p onclick="open_sub_content('a50','_8a'), colorchange('ab50','8ab')" class="8ab" id="ab50"
+                    style="color: rgb(195, 131, 255);">Equation of tangent and normal</p>
+                <p onclick="open_sub_content('a51','_8a'), colorchange('ab51','8ab')" class="8ab" id="ab51">Tangent from
+                    an external point</p>
+                <p onclick="open_sub_content('a52','_8a'), colorchange('ab52','8ab')" class="8ab" id="ab52">Length of
+                    tangent, normal, subtangent, subnormal</p>
+                <p onclick="open_sub_content('a53','_8a'), colorchange('ab53','8ab')" class="8ab" id="ab53">Angle
+                    between the curves</p>
+                <p onclick="open_sub_content('a54','_8a'), colorchange('ab54','8ab')" class="8ab" id="ab54">Rolle's
+                    Theorem</p>
+                <p onclick="open_sub_content('a55','_8a'), colorchange('ab55','8ab')" class="8ab" id="ab55">Lagrange's
+                    Mean Value Theorem (LMVT)</p>
+                <p onclick="open_sub_content('a56','_8a'), colorchange('ab56','8ab')" class="8ab" id="ab56">Useful
+                    Formulae of Mensuration to Remember</p>
+            </div>
+            <div class="side0" id="side_indefinite_integration">
+                <p onclick="open_sub_content('a57','_9a'), colorchange('ab57','9ab')" class="9ab" id="ab57"
+                    style="color: rgb(195, 131, 255);">Introduction</p>
+                <p onclick="open_sub_content('a58','_9a'), colorchange('ab58','9ab')" class="9ab" id="ab58">Standard
+                    Formula</p>
+                <p onclick="open_sub_content('a59','_9a'), colorchange('ab59','9ab')" class="9ab" id="ab59">Integration
+                    by Subsitutions</p>
+                <p onclick="open_sub_content('a60','_9a'), colorchange('ab60','9ab')" class="9ab" id="ab60">Integration
+                    by Part</p>
+                <p onclick="open_sub_content('a61','_9a'), colorchange('ab61','9ab')" class="9ab" id="ab61">Integration
+                    of type A</p>
+                <p onclick="open_sub_content('a62','_9a'), colorchange('ab62','9ab')" class="9ab" id="ab62">Integration
+                    of type B</p>
+                <p onclick="open_sub_content('a63','_9a'), colorchange('ab63','9ab')" class="9ab" id="ab63">Integration
+                    of type C</p>
+                <p onclick="open_sub_content('a64','_9a'), colorchange('ab64','9ab')" class="9ab" id="ab64">Integration
+                    of type D</p>
+                <p onclick="open_sub_content('a65','_9a'), colorchange('ab65','9ab')" class="9ab" id="ab65">Integration
+                    of type E</p>
+                <p onclick="open_sub_content('a66','_9a'), colorchange('ab66','9ab')" class="9ab" id="ab66">Integration
+                    of trigonometric functions</p>
+            </div>
+            <div class="side0" id="side_definite_integration">
+                <p onclick="open_sub_content('a67','_10a'), colorchange('ab67','10ab')" class="10ab" id="ab67"
+                    style="color: rgb(195, 131, 255);">Properties of definite integral</p>
+                <p onclick="open_sub_content('a68','_10a'), colorchange('ab68','10ab')" class="10ab" id="ab68">Leibnitz
+                    Theorem</p>
+            </div>
+            <div class="side0" id="side_fundamentals">
+                <p onclick="open_sub_content('a69','_11a'), colorchange('ab69','11ab')" class="11ab" id="ab69"
+                    style="color: rgb(195, 131, 255);">Intervals</p>
+                <p onclick="open_sub_content('a70','_11a'), colorchange('ab70','11ab')" class="11ab" id="ab70">
+                    Properties of Modulus</p>
+                <p onclick="open_sub_content('a71','_11a'), colorchange('ab71','11ab')" class="11ab" id="ab71">
+                    Trigonometric Functions of Sum or Difference of Two Angles</p>
+                <p onclick="open_sub_content('a72','_11a'), colorchange('ab72','11ab')" class="11ab" id="ab72">
+                    Factorisation of the Sum or Difference of Two Sines or Cosines</p>
+                <p onclick="open_sub_content('a73','_11a'), colorchange('ab73','11ab')" class="11ab" id="ab73">Multiple
+                    and Sub-multiple Angles</p>
+                <p onclick="open_sub_content('a74','_11a'), colorchange('ab74','11ab')" class="11ab" id="ab74">Important
+                    Trigonometric Ratios</p>
+                <p onclick="open_sub_content('a75','_11a'), colorchange('ab75','11ab')" class="11ab" id="ab75">Range of
+                    Trigonometric Expression</p>
+                <p onclick="open_sub_content('a76','_11a'), colorchange('ab76','11ab')" class="11ab" id="ab76">Sine and
+                    Cosine Series </p>
+                <p onclick="open_sub_content('a77','_11a'), colorchange('ab77','11ab')" class="11ab" id="ab77">
+                    Trigonometric Equations</p>
+            </div>
+            <div class="side0" id="side_quadratic">
+                <p onclick="open_sub_content('a78','_12a'), colorchange('ab78','12ab')" class="12ab" id="ab78"
+                    style="color: rgb(195, 131, 255);">Quadratic Equation</p>
+                <p onclick="open_sub_content('a79','_12a'), colorchange('ab79','12ab')" class="12ab" id="ab79">Nature of
+                    Roots</p>
+                <p onclick="open_sub_content('a80','_12a'), colorchange('ab80','12ab')" class="12ab" id="ab80">Common
+                    Roots</p>
+                <p onclick="open_sub_content('a81','_12a'), colorchange('ab81','12ab')" class="12ab" id="ab81">Range of
+                    Quadratic Expression</p>
+                <p onclick="open_sub_content('a82','_12a'), colorchange('ab82','12ab')" class="12ab" id="ab82">Location
+                    of Roots</p>
+            </div>
+            <div class="side0" id="side_sequence">
+                <p onclick="open_sub_content('a83','_13a'), colorchange('ab83','13ab')" class="13ab" id="ab83"
+                    style="color: rgb(195, 131, 255);">An arithmetic progression (A.P.)</p>
+                <p onclick="open_sub_content('a84','_13a'), colorchange('ab84','13ab')" class="13ab" id="ab84">Geometric
+                    Progression</p>
+                <p onclick="open_sub_content('a85','_13a'), colorchange('ab85','13ab')" class="13ab" id="ab85">Harmonic
+                    Mean (H.M.)</p>
+            </div>
+            <div class="side0" id="side_binomial">
+                <p onclick="open_sub_content('a86','_14a'), colorchange('ab86','14ab')" class="14ab" id="ab86"
+                    style="color: rgb(195, 131, 255);">Statement of Binomial theorem</p>
+                <p onclick="open_sub_content('a87','_14a'), colorchange('ab87','14ab')" class="14ab" id="ab87">
+                    Properties of Binomial Theorem</p>
+                <p onclick="open_sub_content('a88','_14a'), colorchange('ab88','14ab')" class="14ab" id="ab88">
+                    Multinomial Theorem</p>
+                <p onclick="open_sub_content('a89','_14a'), colorchange('ab89','14ab')" class="14ab" id="ab89">
+                    Application of Binomial Theorem</p>
+                <p onclick="open_sub_content('a90','_14a'), colorchange('ab90','14ab')" class="14ab" id="ab90">
+                    Properties of Binomial Coefficients</p>
+                <p onclick="open_sub_content('a91','_14a'), colorchange('ab91','14ab')" class="14ab" id="ab91">Binomial
+                    Theorem For Negative Integer Or Fractional Indices</p>
+            </div>
+            <div class="side0" id="side_permutation">
+                <p onclick="open_sub_content('a92','_15a'), colorchange('ab92','15ab')" class="15ab" id="ab92"
+                    style="color: rgb(195, 131, 255);">Arrangement</p>
+                <p onclick="open_sub_content('a93','_15a'), colorchange('ab93','15ab')" class="15ab" id="ab93">Circular
+                    Permutation</p>
+                <p onclick="open_sub_content('a94','_15a'), colorchange('ab94','15ab')" class="15ab" id="ab94">Selection
+                </p>
+                <p onclick="open_sub_content('a95','_15a'), colorchange('ab95','15ab')" class="15ab" id="ab95">Selection
+                    of one or more objects</p>
+                <p onclick="open_sub_content('a96','_15a'), colorchange('ab96','15ab')" class="15ab" id="ab96">
+                    Multinomial Theorem</p>
+                <p onclick="open_sub_content('a97','_15a'), colorchange('ab97','15ab')" class="15ab" id="ab97">
+                    Dearrangement</p>
+            </div>
+            <div class="side0" id="side_probability">
+                <p onclick="open_sub_content('a98','_16a'), colorchange('ab98','16ab')" class="16ab" id="ab98"
+                    style="color: rgb(195, 131, 255);">Classical (A priori) Definition of Probability</p>
+                <p onclick="open_sub_content('a99','_16a'), colorchange('ab99','16ab')" class="16ab" id="ab99">Different
+                    Properties of probability</p>
+                <p onclick="open_sub_content('a100','_16a'), colorchange('ab100','16ab')" class="16ab" id="ab100">
+                    Conditional Probability</p>
+                <p onclick="open_sub_content('a101','_16a'), colorchange('ab101','16ab')" class="16ab" id="ab101">
+                    Binomial Probability Theorem</p>
+                <p onclick="open_sub_content('a102','_16a'), colorchange('ab102','16ab')" class="16ab" id="ab102">
+                    Expectation</p>
+                <p onclick="open_sub_content('a103','_16a'), colorchange('ab103','16ab')" class="16ab" id="ab103">Total
+                    Probability Theorem</p>
+                <p onclick="open_sub_content('a104','_16a'), colorchange('ab104','16ab')" class="16ab" id="ab104">Bayes'
+                    Theorem</p>
+                <p onclick="open_sub_content('a105','_16a'), colorchange('ab105','16ab')" class="16ab" id="ab105">
+                    Binomial Probability Distribution</p>
+            </div>
+            <div class="side0" id="side_complex">
+                <p onclick="open_sub_content('a106','_17a'), colorchange('ab106','17ab')" class="17ab" id="ab106"
+                    style="color: rgb(195, 131, 255);">The complex number system</p>
+                <p onclick="open_sub_content('a107','_17a'), colorchange('ab107','17ab')" class="17ab" id="ab107">
+                    Equality In Complex Number</p>
+                <p onclick="open_sub_content('a108','_17a'), colorchange('ab108','17ab')" class="17ab" id="ab108">
+                    Properties of arguments</p>
+                <p onclick="open_sub_content('a109','_17a'), colorchange('ab109','17ab')" class="17ab" id="ab109">
+                    Properties of conjugate</p>
+                <p onclick="open_sub_content('a110','_17a'), colorchange('ab110','17ab')" class="17ab" id="ab110">
+                    Rotation theorem</p>
+                <p onclick="open_sub_content('a111','_17a'), colorchange('ab111','17ab')" class="17ab" id="ab111">
+                    Demoivre's Theorem</p>
+                <p onclick="open_sub_content('a112','_17a'), colorchange('ab112','17ab')" class="17ab" id="ab112">Cube
+                    Root Of Unity</p>
+                <p onclick="open_sub_content('a113','_17a'), colorchange('ab113','17ab')" class="17ab" id="ab113">
+                    Geometrical Properties</p>
+            </div>
+            <div class="side0" id="side_vector">
+                <p onclick="open_sub_content('a114','_18a'), colorchange('ab114','18ab')" class="18ab" id="ab114"
+                    style="color: rgb(195, 131, 255);">Position Vector Of A Point</p>
+                <p onclick="open_sub_content('a115','_18a'), colorchange('ab115','18ab')" class="18ab" id="ab115">Scalar
+                    Product Of Two Vectors</p>
+                <p onclick="open_sub_content('a116','_18a'), colorchange('ab116','18ab')" class="18ab" id="ab116">Vector
+                    Product Of Two Vectors</p>
+                <p onclick="open_sub_content('a117','_18a'), colorchange('ab117','18ab')" class="18ab" id="ab117">Scalar
+                    Triple Product</p>
+                <p onclick="open_sub_content('a118','_18a'), colorchange('ab118','18ab')" class="18ab" id="ab118">Vector
+                    Triple Product</p>
+            </div>
+            <div class="side0" id="side_dimension">
+                <p onclick="open_sub_content('a119','_19a'), colorchange('ab119','19ab')" class="19ab" id="ab119"
+                    style="color: rgb(195, 131, 255);">Vector representation of a point</p>
+                <p onclick="open_sub_content('a120','_19a'), colorchange('ab120','19ab')" class="19ab" id="ab120">
+                    Distance formula</p>
+                <p onclick="open_sub_content('a121','_19a'), colorchange('ab121','19ab')" class="19ab" id="ab121">
+                    Distance of P from coordinate axes</p>
+                <p onclick="open_sub_content('a122','_19a'), colorchange('ab122','19ab')" class="19ab" id="ab122">
+                    Section Formula</p>
+                <p onclick="open_sub_content('a123','_19a'), colorchange('ab123','19ab')" class="19ab" id="ab123">
+                    Direction Cosines And Direction Ratios</p>
+                <p onclick="open_sub_content('a124','_19a'), colorchange('ab124','19ab')" class="19ab" id="ab124">Angle
+                    Between Two Line Segments</p>
+                <p onclick="open_sub_content('a125','_19a'), colorchange('ab125','19ab')" class="19ab" id="ab125">
+                    Projection of a line segment on a line</p>
+                <p onclick="open_sub_content('a126','_19a'), colorchange('ab126','19ab')" class="19ab" id="ab126">
+                    Equation Of A Plane</p>
+                <p onclick="open_sub_content('a127','_19a'), colorchange('ab127','19ab')" class="19ab" id="ab127">A
+                    Plane & A Point</p>
+                <p onclick="open_sub_content('a128','_19a'), colorchange('ab128','19ab')" class="19ab" id="ab128">Angle
+                    Between Two Planes</p>
+                <p onclick="open_sub_content('a129','_19a'), colorchange('ab129','19ab')" class="19ab" id="ab129">Angle
+                    Bisectors</p>
+                <p onclick="open_sub_content('a130','_19a'), colorchange('ab130','19ab')" class="19ab" id="ab130">Family
+                    of Planes</p>
+                <p onclick="open_sub_content('a131','_19a'), colorchange('ab131','19ab')" class="19ab" id="ab131">Volume
+                    Of A Tetrahedron</p>
+                <p onclick="open_sub_content('a132','_19a'), colorchange('ab132','19ab')" class="19ab" id="ab132">
+                    Equation Of A Line</p>
+                <p onclick="open_sub_content('a133','_19a'), colorchange('ab133','19ab')" class="19ab" id="ab133">Angle
+                    Between A Plane And A Line</p>
+                <p onclick="open_sub_content('a134','_19a'), colorchange('ab134','19ab')" class="19ab" id="ab134">
+                    Condition For A Line To Lie In A Plane</p>
+                <p onclick="open_sub_content('a135','_19a'), colorchange('ab135','19ab')" class="19ab" id="ab135">Skew
+                    Lines</p>
+                <p onclick="open_sub_content('a136','_19a'), colorchange('ab136','19ab')" class="19ab" id="ab136">Sphere
+                </p>
+            </div>
+            <div class="side0" id="side_triangle">
+                <p onclick="open_sub_content('a137','_20a'), colorchange('ab137','20ab')" class="20ab" id="ab137"
+                    style="color: rgb(195, 131, 255);">Sine Rule</p>
+                <p onclick="open_sub_content('a138','_20a'), colorchange('ab138','20ab')" class="20ab" id="ab138">Cosine
+                    Formula</p>
+                <p onclick="open_sub_content('a139','_20a'), colorchange('ab139','20ab')" class="20ab" id="ab139">
+                    Projection Formula</p>
+                <p onclick="open_sub_content('a140','_20a'), colorchange('ab140','20ab')" class="20ab" id="ab140">
+                    Napier's Analogy - tangent rule</p>
+                <p onclick="open_sub_content('a141','_20a'), colorchange('ab141','20ab')" class="20ab" id="ab141">
+                    Trigonometric Functions of Half Angles</p>
+                <p onclick="open_sub_content('a142','_20a'), colorchange('ab142','20ab')" class="20ab" id="ab142">Area
+                    of Triangle</p>
+                <p onclick="open_sub_content('a143','_20a'), colorchange('ab143','20ab')" class="20ab" id="ab143">m - n
+                    Rule</p>
+                <p onclick="open_sub_content('a144','_20a'), colorchange('ab144','20ab')" class="20ab" id="ab144">Radius
+                    of Circumcirlce</p>
+                <p onclick="open_sub_content('a145','_20a'), colorchange('ab145','20ab')" class="20ab" id="ab145">Radius
+                    of The Incircle</p>
+                <p onclick="open_sub_content('a146','_20a'), colorchange('ab146','20ab')" class="20ab" id="ab146">Radius
+                    of The Ex- Circles</p>
+                <p onclick="open_sub_content('a148','_20a'), colorchange('ab148','20ab')" class="20ab" id="ab148">Length
+                    of Angle Bisectors, Medians & Altitudes</p>
+                <p onclick="open_sub_content('a149','_20a'), colorchange('ab149','20ab')" class="20ab" id="ab149">
+                    Orthocentre and Pedal Triangle</p>
+                <p onclick="open_sub_content('a150','_20a'), colorchange('ab150','20ab')" class="20ab" id="ab150">
+                    Excentral Triangle</p>
+                <p onclick="open_sub_content('a151','_20a'), colorchange('ab151','20ab')" class="20ab" id="ab151">
+                    Distance Between Special Points</p>
+            </div>
+            <div class="side0" id="side_inverse_trigono">
+                <p onclick="open_sub_content('a152','_21a'), colorchange('ab152','21ab')" class="21ab" id="ab152"
+                    style="color: rgb(195, 131, 255);">Principal Values & Domains of Inverse Trigonometric/Circular
+                    Functions</p>
+                <p onclick="open_sub_content('a153','_21a'), colorchange('ab153','21ab')" class="21ab" id="ab153">
+                    Identities of Addition and Substraction</p>
+            </div>
+            <div class="side0" id="side_statistic">
+                <p onclick="open_sub_content('a154','_22a'), colorchange('ab154','22ab')" class="22ab" id="ab154"
+                    style="color: rgb(195, 131, 255);">Arithmetic Mean / or Mean</p>
+                <p onclick="open_sub_content('a155','_22a'), colorchange('ab155','22ab')" class="22ab" id="ab155">
+                    Properties of Arithmetic Mean</p>
+                <p onclick="open_sub_content('a156','_22a'), colorchange('ab156','22ab')" class="22ab" id="ab156">Median
+                </p>
+                <p onclick="open_sub_content('a157','_22a'), colorchange('ab157','22ab')" class="22ab" id="ab157">Mode
+                </p>
+                <p onclick="open_sub_content('a158','_22a'), colorchange('ab158','22ab')" class="22ab" id="ab158">Range
+                </p>
+                <p onclick="open_sub_content('a159','_22a'), colorchange('ab159','22ab')" class="22ab" id="ab159">Mean
+                    deviation</p>
+                <p onclick="open_sub_content('a160','_22a'), colorchange('ab160','22ab')" class="22ab" id="ab160">
+                    Variance</p>
+            </div>
+            <div class="side0" id="side_resoning">
+                <p onclick="open_sub_content('a161','_23a'), colorchange('ab161','23ab')" class="23ab" id="ab161"
+                    style="color: rgb(195, 131, 255);">Tautology</p>
+                <p onclick="open_sub_content('a162','_23a'), colorchange('ab162','23ab')" class="23ab" id="ab162">
+                    Fallacy</p>
+            </div>
+            <div class="side0" id="side_set">
+                <p onclick="open_sub_content('a163','_24a'), colorchange('ab163','24ab')" class="24ab" id="ab163"
+                    style="color: rgb(195, 131, 255);">Laws of Algebra of sets (Properties of sets)</p>
+                <p onclick="open_sub_content('a164','_24a'), colorchange('ab164','24ab')" class="24ab" id="ab164">Some
+                    important results on number of elements in sets</p>
+                <p onclick="open_sub_content('a165','_24a'), colorchange('ab165','24ab')" class="24ab" id="ab165">Types
+                    of relations</p>
+            </div>
+        </div>
+        <div id="content">
+            <div class="content0 active_content" id="straight">
+                <p><strong class="_1a a_active" id="a1" style="color: blueviolet;">1. Distance Formula:</strong>
+                    \[d = \sqrt{(x_1-x_2)^2+(y_1-y_2)^2}\]
+                    <strong class="_1a" id="a2">2. Section Formula:</strong>
+                    \[x = \frac{mx_2 \pm nx_1}{m \pm n};y = \frac{my_2 \pm ny_1}{m \pm n}\]
+                    <strong class="_1a" id="a3">3. Centroid, Incentre & Excentre:</strong>
+                    <br><br>
+                    \[A. \; Centroid \; G\left(\frac{x_1+x_2+x_3}{3},\frac{y_1+y_2+y_3}{3}\right)\]
+                    \[B. \; Incentre \; I\left(\frac{ax_1+bx_2+cx_3}{a+b+c},\frac{ay_1+by_2+cy_3}{a+b+c}\right)\]
+                    \[C. \; Excentre \; I_1\left(\frac{-ax_1+bx_2+cx_3}{-a+b+c},\frac{-ay_1+by_2+cy_3}{-a+b+c}\right)\]
+                    <strong class="_1a" id="a4">4. Area of a Triangle:</strong>
+                    \[\Delta ABC = \frac{1}{2}\left|\begin{array}ax_1 & y_1 & 1 \\ x_2 & y_2 & 1 \\ x_3 & y_3 & 1
+                    \end{array}\right|\]
+                    <strong class="_1a" id="a5">5. Slope Formula:</strong><br>
+                    \[Line \; Joining \; two \; points \; (x_1,y_1) \; \& \; (x_2,y_2),\;m = \frac{y_1-y_2}{x_1-x_2}\]
+                    <strong class="_1a" id="a6">6. Condition of collinearity of three points:</strong>
+                    \[\left|\begin{array}ax_1 & y_1 & 1 \\ x_2 & y_2 & 1 \\ x_3 & y_3 & 1 \end{array}\right| = 0\]
+                    <strong class="_1a" id="a7">7. Angle between two straight lines</strong>
+                    \[tan\theta = \left|\frac{m_1-m_2}{1+m_1m_2}\right|\]
+                    <!-- </p>
+                <p> -->
+                    <strong class="_1a" id="a8">8. Two Lines:</strong>
+                    \[Let \; ax + by + c = 0 \; and \; a'x + b'y + c' = 0 \; are \; two \; lines, \; then\]
+                    \[A. \; parallel \; if \; \frac{a}{a'}=\frac{b}{b'}\neq\frac{c}{c'}\]
+                    \[B. \; Distance \; between \; two \; parallel \; lines \; =
+                    \left|\frac{c_1-c_2}{\sqrt{a^2+b^2}}\right|\]
+                    \[C.\; Perpendicular:\;If\;aa' + bb' = 0\]
+                    <strong class="_1a" id="a9">9. A point and lines:</strong>
+                    \[A. \; Distance \; between \; point \; and \; line \; = \left|\frac{ax_1 + by_1 + c}{\sqrt{a^2 +
+                    b^2}}\right|\]
+                    \[B. \; Reflection \; of \; a \; point \; about \; a \; line: \frac{x - x_1}{a} = \frac{y - y_1}{b}
+                    = - 2 \frac{ax_1+by_1+c}{a^2+b^2}\]
+                    \[C. \; Foot \; of \; the \; perpendicular \; from \; a \; point \; on \; the \; line \; is:\]
+                    \[\frac{x - x_1}{a} = \frac{y - y_1}{b} = - \frac{ax_1+by_1+c}{a^2+b^2}\]
+                    <strong class="_1a" id="a10">10. Bisectors of the angles between two lines:</strong>
+                    \[\frac{ax+by+c}{\sqrt{a^2+b^2}} = \pm \frac{a'x+b'y+c'}{\sqrt{a'^2+b'^2}}\]
+                    <strong class="_1a" id="a11">11. Condition of Concurrency:</strong>
+                    \[of \; three \; straight \; lines \; a_1x+ b_1y + c_1= 0, i = 1,2,3 \; is \left|\begin{array}aa_1 &
+                    b_1 & c_1 \\ a_2 & b_2 & c_2 \\ a_3 & b_3 & c_3 \end{array}\right| = 0\]
+                    <strong class="_1a" id="a12">12. A pair of straight lines through origin:</strong>
+                    \[ax^2 + 2hxy + by^2 = 0\]
+                    \[If \; \theta \; is \; acute \; angle \; between \; the \; pair \; of \; the \; straight \; lines,
+                    \; then \; tan\theta = \left|2\frac{\sqrt{h^2 - ab}}{a+b}\right|\]
+
+                </p>
+            </div>
+            <div class="content0" id="circle">
+                <p>
+                    <strong class="_2a a_active" id="a13" style="color: blueviolet;">1. Intercepts made by
+                        Circle:\[\mathrm{Circle \; x^2+y^2+2gx+2fy+c = 0 \; on \; the \;
+                        Axes:}\]</strong>
+                    \[A. \; 2 \sqrt{g^2-c} \; \; on \; x-axis \; \; \; B. \; 2 \sqrt{f^2-c} \; \; on \; y-axis\]
+                    <strong class="_2a" id="a14">2. Parametric Equations of a Circle:</strong>
+                    \[x = h + rcos\theta \; ; \; \; y = k + rsin\theta\]
+                    <strong class="_2a" id="a15">3. Tangent:</strong>
+                    \[A. \; Slope \; form: \; y = mx \pm a \sqrt{1+m^2}\]
+                    \[B. \; Point \; form: \; xx_1 + yy_1 = a^2 \; or \; T = 0\]
+                    \[C. \; Parametric \; form: \; xcos\alpha + ysin\alpha = a\]
+                    <strong class="_2a" id="a16">4. Pair of Tangents from a Point:</strong>
+                    \[SS_1 = T^2\]
+                    <strong class="_2a" id="a17">5. Length of a Tangent:</strong>
+                    \[Length \; of \; tangent \; is \; \sqrt{S_1}\]
+                    <strong class="_2a" id="a18">6. Center at some point:</strong>
+                    \[Equation \; of \; center \; of \; a \; circle \; at \; (\alpha,\beta) \; with \; radius \; a \; is
+                    \\ (x-\alpha)^2+(y-\beta)^2 = a^2\]
+
+                    <!-- </p>
+                <p> -->
+                    <strong class="_2a" id="a19">7. Director Circle:</strong>
+                    \[x^2+y^2 = 2a^2 \; for \; x^2+y^2 = a^2\]
+                    <strong class="_2a" id="a20">8. Chord of Contact:</strong> T = 0
+                    \[A. \; Length \; of chord \; of \; contact = \frac{2LR}{\sqrt{R^2+L^2}}\]
+                    \[B. \; Area \; of \; the \; triangle \; formed \; by \; the \; pair \; of \; the \; tangents \;
+                    \& \; its \; chord \; of \; contact = \frac{RL^3}{R^2+L^2}\]
+                    \[C. \; Tangent \; of \; the \; angle \; between \; the \; pair \; of \; tangents \; from \;
+                    (x_1,y_1) = \frac{2RL}{L^2-R^2}\]
+                    \[D. \; Equation \; of \; the \; circle \; circumscribing \; the \; triangle \; PT_1T_2 \; is \\ =
+                    (x-x_1)(x+g)+(y-y_1)(y+f) = 0\]
+                    <strong class="_2a" id="a21">9. Condition of orthogonality of Two Circles:</strong>
+                    \[2g_1g_2 + 2f_1f_2 = c_1 + c_2\]
+                    <strong class="_2a" id="a22">10. Radical Axis:</strong>
+                    \[S_1 - S_2 = 0 \; i.e. \; 2(g_1-g_2)x + 2(f_1-f_2)y + (c_1-c_2) = 0\]
+                    <strong class="_2a" id="a23">11. Family of Circles:</strong>
+                    \[S_1 + KS_2 = 0, \; S + KL = 0\]
+                </p>
+            </div>
+            <div class="content0" id="parabola">
+                <p>
+                    <strong class="_3a a_active" id="a24" style="color: blueviolet;">1. All equations of
+                        Parabola:</strong>
+                </p>
+                <table id="parabola_table">
+                    <tr>
+                        <th>Equation of parabola</th>
+                        <th>Coordinates of vertex</th>
+                        <th>Axis of parabola</th>
+                        <th>Coordinates of focus</th>
+                        <th>Length of latus rectum</th>
+                        <th>Equation of directrix</th>
+                    </tr>
+                    <tr>
+                        <td>\[y^2=4ax\;(a>0)\]</td>
+                        <td>\[(0,0)\]</td>
+                        <td>\[Positive \; x-axis\]</td>
+                        <td>\[(a,0)\]</td>
+                        <td>\[4a\]</td>
+                        <td>\[x+a=0\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[y^2=-4ax\;(a>0)\]</td>
+                        <td>\[(0,0)\]</td>
+                        <td>\[Negative \; x-axis\]</td>
+                        <td>\[(-a,0)\]</td>
+                        <td>\[4a\]</td>
+                        <td>\[x-a=0\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[x^2=4ay\;(a>0)\]</td>
+                        <td>\[(0,0)\]</td>
+                        <td>\[Positive \; y-axis\]</td>
+                        <td>\[(0,a)\]</td>
+                        <td>\[4a\]</td>
+                        <td>\[y+a=0\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[x^2=-4ay\;(a>0)\]</td>
+                        <td>\[(0,0)\]</td>
+                        <td>\[Negative \; y-axis\]</td>
+                        <td>\[(0,-a)\]</td>
+                        <td>\[4a\]</td>
+                        <td>\[y-a=0\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[(y-\beta)^2=4a(x-\alpha)\]</td>
+                        <td>\[(\alpha,\beta)\]</td>
+                        <td>\[Parallel \; to \; x-axis\]</td>
+                        <td>\[(a+\alpha,\beta)\]</td>
+                        <td>\[4a\]</td>
+                        <td>\[x+a=\alpha\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[(x-\alpha)^2=4a(y-\beta)\]</td>
+                        <td>\[(\alpha,\beta)\]</td>
+                        <td>\[Parallel \; to \; y-axis\]</td>
+                        <td>\[(\alpha,a+\beta)\]</td>
+                        <td>\[4a\]</td>
+                        <td>\[y+a=\beta\]</td>
+                    </tr>
+                </table>
+                <p>
+                    <strong class="_3a" id="a25">2. Parametric represention:</strong>
+                    \[x=at^2 \; \& \; y=2at\]
+                    <strong class="_3a" id="a26">3. Tangents to the Parabola:</strong>
+                    \[For \; parabola \; y^2=4ax, \\ A. \; Slope \; form \; y = mx + \frac{a}{m} (m\neq0)\]
+                    \[B. \; Parametric \; form \; ty=x+at^2\]
+                    \[C. \; Point \; form \; T=0\]
+                    <strong class="_3a" id="a27">4. Normals to the Parabola:</strong>
+                    \[A. \; (y-y_1)=-\frac{y_1}{2a}(x-x_1) \; at \; (x_1,y_1)\]
+                    \[B. \; y = (mx - 2am - am^3) \; at \; (am^2,-2am)\]
+                    \[C. \; (y+tx)=(2at+at^3) \; at \; (at^2,2at)\]
+                </p>
+
+            </div>
+            <div class="content0" id="ellipse">
+                <p>
+                    <strong class="_4a a_active" id="a28" style="color: blueviolet;">1. All equations of
+                        Ellipse:</strong>
+                </p>
+                <table id="ellipse_table">
+                    <tr>
+                        <th></th>
+                        <th>\[\frac{x^2}{a^2}+\frac{y^2}{b^2}=1 \]
+                            \[[a^2+b^2]\]</th>
+                        <th>\[\frac{x^2}{b^2}+\frac{y^2}{a^2}=1 \]
+                            \[[a^2+b^2]\]</th>
+                        <th>\[\frac{(x-\alpha)^2}{a^2}+\frac{(y-\beta)^2}{b^2}=1 \]
+                            \[[a^2+b^2]\]</th>
+                        <th>\[\frac{(x-\alpha)^2}{b^2}+\frac{(y-\beta)^2}{a^2}=1 \]
+                            \[[a^2+b^2]\]</th>
+                    </tr>
+                    <tr>
+                        <td>\[Major \; axis\]</td>
+                        <td>\[x-axis\]</td>
+                        <td>\[y-axis\]</td>
+                        <td>\[parallel \; to \; x-axis\]</td>
+                        <td>\[parallel \; to \; y-axis\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Minor \; axis\]</td>
+                        <td>\[y-axis\]</td>
+                        <td>\[x-axis\]</td>
+                        <td>\[parallel \; to \; y-axis\]</td>
+                        <td>\[parallel \; to \; x-axis\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Equation \; of \; major \; axis\]</td>
+                        <td>\[y=0\]</td>
+                        <td>\[x=0\]</td>
+                        <td>\[y=\beta\]</td>
+                        <td>\[x=\alpha\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Equation \; of \; minor \; axis\]</td>
+                        <td>\[x=0\]</td>
+                        <td>\[y=0\]</td>
+                        <td>\[x=\alpha\]</td>
+                        <td>\[y=\beta\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Length \; of \; major \; axis\]</td>
+                        <td>\[2a \; units\]</td>
+                        <td>\[2a \; units\]</td>
+                        <td>\[2a \; units\]</td>
+                        <td>\[2a \; units\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Length \; of \; major \; axis\]</td>
+                        <td>\[2b \; units\]</td>
+                        <td>\[2b \; units\]</td>
+                        <td>\[2b \; units\]</td>
+                        <td>\[2b \; units\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Coordinates \; of \; centre\]</td>
+                        <td>\[(0,0)\]</td>
+                        <td>\[(0,0)\]</td>
+                        <td>\[(\alpha,\beta)\]</td>
+                        <td>\[(\alpha,\beta)\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Coordinates \; of \; vertices\]</td>
+                        <td>\[(\pm a,0)\]</td>
+                        <td>\[(0,\pm a)\]</td>
+                        <td>\[(\alpha\pm a,\beta)\]</td>
+                        <td>\[(\alpha,\beta\pm a)\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Eccentricity\]</td>
+                        <td>\[e=\sqrt{1-\frac{b^2}{a^2}}\]</td>
+                        <td>\[e=\sqrt{1-\frac{b^2}{a^2}}\]</td>
+                        <td>\[e=\sqrt{1-\frac{b^2}{a^2}}\]</td>
+                        <td>\[e=\sqrt{1-\frac{b^2}{a^2}}\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Coordinates \; of \; foci\]</td>
+                        <td>\[(\pm ae,0)\]</td>
+                        <td>\[(0,\pm ae)\]</td>
+                        <td>\[(\alpha\pm ae,\beta)\]</td>
+                        <td>\[(\alpha,\beta \pm ae)\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Distance \; between \; two \; foci\]</td>
+                        <td>\[2ae \; unit\]</td>
+                        <td>\[2ae \; unit\]</td>
+                        <td>\[2ae \; unit\]</td>
+                        <td>\[2ae \; unit\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Length \; of \; latus \; rectum\]</td>
+                        <td>\[\frac{2b^2}{a} \; unit\]</td>
+                        <td>\[\frac{2b^2}{a} \; unit\]</td>
+                        <td>\[\frac{2b^2}{a} \; unit\]</td>
+                        <td>\[\frac{2b^2}{a} \; unit\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Coordinates \; of \; the \; four\]
+                            \[ends \; of \; latera \; recta\]</td>
+                        <td>\[\left(ae,\frac{b^2}{a}\right),\left(ae,-\frac{b^2}{a}\right),\]
+                            \[\left(-ae,\frac{b^2}{a}\right),\left(-ae,-\frac{b^2}{a}\right)\]</td>
+                        <td>\[\left(\frac{b^2}{a},ae\right),\left(-\frac{b^2}{a},ae\right),\]
+                            \[\left(\frac{b^2}{a},-ae\right),\left(-\frac{b^2}{a},-ae\right)\]</td>
+                        <td>\[\left(\alpha \pm ae, \beta \pm \frac{b^2}{a}\right)\]</td>
+                        <td>\[\left(\alpha \pm \frac{b^2}{a}\right), \beta \pm ae\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Equations \; of \; latera \; recta\]</td>
+                        <td>\[x=\pm ae\]</td>
+                        <td>\[y=\pm ae\]</td>
+                        <td>\[x=\alpha \pm ae\]</td>
+                        <td>\[y=\beta \pm ae\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Equations \; of \; directrices\]</td>
+                        <td>\[x=\pm \frac{a}{e}\]</td>
+                        <td>\[y=\pm \frac{a}{e}\]</td>
+                        <td>\[x=\alpha \pm \frac{a}{e}\]</td>
+                        <td>\[y=\beta \pm \frac{a}{e}\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Distance \; between \]\[ two \; directrices\]</td>
+                        <td>\[\frac{2a}{e} \; unit\]</td>
+                        <td>\[\frac{2a}{e} \; unit\]</td>
+                        <td>\[\frac{2a}{e} \; unit\]</td>
+                        <td>\[\frac{2a}{e} \; unit\]</td>
+                    </tr>
+                </table>
+                <p>
+                    <strong class="_4a" id="a29">2. Auxiliary Circle:</strong>
+                    \[x^2+y^2=a^2\]
+                    <strong class="_4a" id="a30">3. Parametric Representation:</strong>
+                    \[x=acos\theta \; \& \; y=bsin\theta\]
+                    <strong class="_4a" id="a31">4. Position of a Point w.r.t. an Ellipse:</strong>
+                    \[The \; point \; P(x_1,y_1) \; lies \; outside, \; inside \; or \; on \; the \; ellipse \;
+                    accordingly \; as \; \frac{x_1^2}{a^2}+\frac{y_1^2}{b^2}-1 \; > \; or \; < \; or=0 \] <strong
+                        class="_4a" id="a32">
+                        5.Tangents:</strong>
+                        \[A. \; Slope \; form \; y=mx \pm \sqrt{a^2m^2+b^2}\]
+                        \[B. \; Point \; form \; \frac{xx_1}{a^2}+\frac{yy_1}{b^2}=1\]
+                        \[C. \; Parametric \; form \; \frac{xcos\theta}{a}+\frac{ysin\theta}{b}=1\]
+                        <strong class="_4a" id="a33">6. Normals:</strong>
+                        \[A. \; At \; the \; point \; P(x_1,y_1) \; is \; \frac{a^2x}{x_1}-\frac{b^2y}{y_1}=a^2-b^2\]
+                        \[B. \; At \; the \; point \; P(asec\theta,bcosec\theta) \; axsec\theta-bycosec\theta=a^2-b^2\]
+                        \[C. \; Equation \; of \; normals \; in \; terms \; of \; its \; slope \; 'm' \; are \;
+                        y=mx-\frac{(a^2-b^2)m}{\sqrt{a^2+b^2m^2}}\]
+                        <strong class="_4a" id="a34">7. Director Circle:</strong>
+                        \[x^2+y^2=a^2+b^2\]
+                </p>
+            </div>
+            <div class="content0" id="hyperbola">
+                <p>
+                    <strong class="_5a a_active" id="a35" style="color: blueviolet;">1. All equations of
+                        Hyperbola</strong>
+                </p>
+                <table id="hyperbola_table">
+                    <tr>
+                        <th></th>
+                        <th>\[\frac{x^2}{a^2}+\frac{y^2}{b^2}=1\]</th>
+                        <th>\[\frac{x^2}{b^2}+\frac{y^2}{a^2}=1\]</th>
+                        <th>\[\frac{(x-\alpha)^2}{a^2}+\frac{(y-\beta)^2}{b^2}=1\]</th>
+                        <th>\[\frac{(x-\alpha)^2}{b^2}+\frac{(y-\beta)^2}{a^2}=1\]</th>
+                    </tr>
+                    <tr>
+                        <td>\[Transverse \; axis\]</td>
+                        <td>\[x-axis\]</td>
+                        <td>\[y-axis\]</td>
+                        <td>\[parallel \; to \; x-axis\]</td>
+                        <td>\[parallel \; to \; y-axis\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Conjugate \; axis\]</td>
+                        <td>\[y-axis\]</td>
+                        <td>\[x-axis\]</td>
+                        <td>\[parallel \; to \; y-axis\]</td>
+                        <td>\[parallel \; to \; x-axis\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Equation \; of \; Transverse \; axis\]</td>
+                        <td>\[y=0\]</td>
+                        <td>\[x=0\]</td>
+                        <td>\[y=\beta\]</td>
+                        <td>\[x=\alpha\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Equation \; of \; Conjugate \; axis\]</td>
+                        <td>\[x=0\]</td>
+                        <td>\[y=0\]</td>
+                        <td>\[x=\alpha\]</td>
+                        <td>\[y=\beta\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Length \; of \; Transverse \; axis\]</td>
+                        <td>\[2a \; units\]</td>
+                        <td>\[2a \; units\]</td>
+                        <td>\[2a \; units\]</td>
+                        <td>\[2a \; units\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Length \; of \; Conjugate \; axis\]</td>
+                        <td>\[2b \; units\]</td>
+                        <td>\[2b \; units\]</td>
+                        <td>\[2b \; units\]</td>
+                        <td>\[2b \; units\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Coordinates \; of \; centre\]</td>
+                        <td>\[(0,0)\]</td>
+                        <td>\[(0,0)\]</td>
+                        <td>\[(\alpha,\beta)\]</td>
+                        <td>\[(\alpha,\beta)\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Coordinates \; of \; vertices\]</td>
+                        <td>\[(\pm a,0)\]</td>
+                        <td>\[(0,\pm a)\]</td>
+                        <td>\[(\alpha\pm a,\beta)\]</td>
+                        <td>\[(\alpha,\beta\pm a)\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Eccentricity\]</td>
+                        <td>\[e=\sqrt{1+\frac{b^2}{a^2}}\]</td>
+                        <td>\[e=\sqrt{1+\frac{b^2}{a^2}}\]</td>
+                        <td>\[e=\sqrt{1+\frac{b^2}{a^2}}\]</td>
+                        <td>\[e=\sqrt{1+\frac{b^2}{a^2}}\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Coordinates \; of \; foci\]</td>
+                        <td>\[(\pm ae,0)\]</td>
+                        <td>\[(0,\pm ae)\]</td>
+                        <td>\[(\alpha\pm ae,\beta)\]</td>
+                        <td>\[(\alpha,\beta \pm ae)\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Distance \; between \; two \; foci\]</td>
+                        <td>\[2ae \; unit\]</td>
+                        <td>\[2ae \; unit\]</td>
+                        <td>\[2ae \; unit\]</td>
+                        <td>\[2ae \; unit\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Length \; of \; latus \; rectum\]</td>
+                        <td>\[\frac{2b^2}{a} \; unit\]</td>
+                        <td>\[\frac{2b^2}{a} \; unit\]</td>
+                        <td>\[\frac{2b^2}{a} \; unit\]</td>
+                        <td>\[\frac{2b^2}{a} \; unit\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Coordinates \; of \; the \; four\]
+                            \[ends \; of \; latera \; recta\]</td>
+                        <td>\[\left(ae,\frac{b^2}{a}\right),\left(ae,-\frac{b^2}{a}\right),\]
+                            \[\left(-ae,\frac{b^2}{a}\right),\left(-ae,-\frac{b^2}{a}\right)\]</td>
+                        <td>\[\left(\frac{b^2}{a},ae\right),\left(-\frac{b^2}{a},ae\right),\]
+                            \[\left(\frac{b^2}{a},-ae\right),\left(-\frac{b^2}{a},-ae\right)\]</td>
+                        <td>\[\left(\alpha \pm ae, \beta \pm \frac{b^2}{a}\right)\]</td>
+                        <td>\[\left(\alpha \pm \frac{b^2}{a}\right), \beta \pm ae\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Equations \; of \; latera \; recta\]</td>
+                        <td>\[x=\pm ae\]</td>
+                        <td>\[y=\pm ae\]</td>
+                        <td>\[x=\alpha \pm ae\]</td>
+                        <td>\[y=\beta \pm ae\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Equations \; of \; directrices\]</td>
+                        <td>\[x=\pm \frac{a}{e}\]</td>
+                        <td>\[y=\pm \frac{a}{e}\]</td>
+                        <td>\[x=\alpha \pm \frac{a}{e}\]</td>
+                        <td>\[y=\beta \pm \frac{a}{e}\]</td>
+                    </tr>
+                    <tr>
+                        <td>\[Distance \; between \]\[ two \; directrices\]</td>
+                        <td>\[\frac{2a}{e} \; unit\]</td>
+                        <td>\[\frac{2a}{e} \; unit\]</td>
+                        <td>\[\frac{2a}{e} \; unit\]</td>
+                        <td>\[\frac{2a}{e} \; unit\]</td>
+                    </tr>
+                </table>
+                <p>
+                    <strong class="_5a" id="a36">2. Auxiliary Circle:</strong>
+                    \[x^2+y^2=a^2\]
+                    <strong class="_5a" id="a37">3. Parametric Representation:</strong>
+                    \[x=asec\theta \; \& \; y=btan\theta\]
+                    <strong class="_5a" id="a38">4. Position of a Point w.r.t. an Hyperbola:</strong>
+                    \[S_1 \equiv \frac{x_1^2}{a^2}-\frac{y_1^2}{b^2}-1 \; > \; or \; < \; or=0 \; according \; as \; the
+                        \; point \; (x_1,y_1) \; lies \; inside, \; on \; or \; outside \; the \; curve\] <strong
+                        class="_5a" id="a39">
+                        5.Tangents:</strong>
+                        \[A. \; Slope \; form \; y=mx \pm \sqrt{a^2m^2+b^2}\]
+                        \[B. \; Point \; form \; \frac{xx_1}{a^2}-\frac{yy_1}{b^2}=1\]
+                        \[C. \; Parametric \; form \; \frac{xsec\theta}{a}-\frac{ytan\theta}{b}=1\]
+                        <strong class="_5a" id="a40">6. Normals:</strong>
+                        \[A. \; At \; the \; point \; P(x_1,y_1) \; is \; \frac{a^2x}{x_1}+\frac{b^2y}{y_1}=a^2+b^2\]
+                        \[B. \; At \; the \; point \; P(asec\theta,btan\theta) \; is \;
+                        \frac{ax}{sec\theta}+\frac{by}{tan\theta}=a^2+b^2=a^1e^2\]
+                        \[C. \; Equation \; of \; normals \; in \; terms \; of \; its \; slope \; 'm' \; are \;
+                        y=mx+\frac{(a^2-b^2)m}{\sqrt{a^2-b^2m^2}}\]
+                </p>
+            </div>
+            <div class="content0" id="limit">
+                <p>
+                    <strong class="_6a a_active" id="a41" style="color: blueviolet;">1. Limit of a function f(x) is said
+                        to exist as x tends to a when,</strong>
+                    \[\lim_{h\rightarrow0^+}f(a-h)=\lim_{h\rightarrow0^+}f(a+h)=some \; finite \; value \; M\]
+                    <strong class="_6a" id="a42">2. Indeterminant Forms:</strong>
+                    \[\frac{0}{0},\frac{\infty}{\infty},0\times\infty,\infty-\infty,\infty^0,0^0, \; and \; 1^\infty\]
+                    <strong class="_6a" id="a43">3. Standard Limits:</strong>
+                    \[A. \;
+                    \lim_{x\rightarrow0}\frac{sinx}{x}=\lim_{x\rightarrow0}\frac{tanx}{x}=\lim_{x\rightarrow0}\frac{sinx^{-1}}{x}
+                    \\
+                    =\lim_{x\rightarrow0}\frac{tanx^{-1}}{x}=\lim_{x\rightarrow0}\frac{e^x-1}{x}=\lim_{x\rightarrow0}\frac{\ell
+                    n(1+x)}{x}=1\]
+                    \[B. \; \lim_{x\rightarrow0}(1+x)^{1/x}=\lim_{x\rightarrow\infty}\left(1+\frac{1}{x}\right)^x=e\]
+                    \[C. \; \lim_{x\rightarrow0}\frac{a^x-1}{x}=log_ea, \; a>0\]
+                    \[D. \; \lim_{x\rightarrow a}\frac{x^n-a^n}{x-a}=na^{n-1}\]
+                    <strong class="_6a" id="a44">4. Limits Using Expansion:</strong>
+                    \[A. \; a^x=1+\frac{x\ell na}{1!}+\frac{x^2\ell n^2a}{2!}+\frac{x^3\ell n^3a}{3!}+....., \; a>0\]
+                    \[B. \; e^x=1+\frac{x}{1!}+\frac{x^2}{2!}+\frac{x^3}{3!}+.....\]
+                    \[C. \; \ell n(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}-\frac{x^4}{4}+..... \; for \; -1 < x \le 1\] \[D.
+                        \; sinx=x-\frac{x^3}{3!}+\frac{x^5}{5!}-\frac{x^7}{7!}+.....\] \[E. \;
+                        cosx=1-\frac{x^2}{2!}+\frac{x^4}{4!}-\frac{x^6}{6!}+.....\] \[F. \;
+                        tanx=x+\frac{x^3}{3}+\frac{2x^5}{15}+.....\] \[G. \; for \; \left|x\right| < 1, \; n \in
+                        R(1+x)^n=1+nx+\frac{n(n-1)}{1.2}x^2+\frac{n(n-1)(n-2)}{1.2.3}x^3+.....\infty\] </p>
+            </div>
+            <div class="content0" id="differentiation">
+                <p>
+                    <strong class="_7a a_active" id="a45" style="color: blueviolet;">1. Differentiation of some
+                        elementary function:</strong>
+                    \[A. \; \frac{d}{dx}(x^n)=nx^{n-1} \; \; \; \; B. \; \frac{d}{dx}(a^x)=a^x\ell na\]
+                    \[C. \; \frac{d}{dx}(\ell n \left|x\right|)=\frac{1}{x} \; \; \; \; D. \;
+                    \frac{d}{dx}(log_aX)=\frac{1}{x\ell na}\]
+                    \[E. \; \frac{d}{dx}(sinx)=cosx \; \; \; \; F. \; \frac{d}{dx}(cosx)=-sinx\]
+                    \[G. \; \frac{d}{dx}(secx)=secxtanx \; \; \; \; H. \; \frac{d}{dx}(cosecx)=-cosecxcotx\]
+                    \[I. \; \frac{d}{dx}(tanx)=sec^2x \; \; \; \; J. \; \frac{d}{dx}(cotx)=-cosec^2x\]
+                    \[K. \; \frac{d}{dx}(sin^{-1}x)=\frac{1}{\sqrt{a-x^2}} \; \; \; \; L. \;
+                    \frac{d}{dx}(cos^{-1}x)=-\frac{1}{\sqrt{a-x^2}}\]
+                    \[M. \; \frac{d}{dx}(tan^{-1}x)=\frac{1}{1+x^2} \; \; \; \; N. \;
+                    \frac{d}{dx}(cot^{-1}x)=-\frac{1}{1+x^2}(x\in R)\]
+                    \[O. \; \frac{d}{dx}(sec^{-1}x)=\frac{1}{|x|\sqrt{x^2-1}} \; \; \; \; P. \;
+                    \frac{d}{dx}(sec^{-1}x)=-\frac{1}{|x|\sqrt{x^2-1}} \; for \; x \in (-\infty,-1)\cup(1,infty)\]
+                    <strong class="_7a" id="a46">2. Basic Theorems:</strong>
+                    \[A. \; \frac{d}{dx}(f\pm g)=f'(x)\pm g'(x) \; \; \; \; B. \;
+                    \frac{d}{dx}(kf(x))=k\frac{d}{dx}f(x)\]
+                    \[C. \; \frac{d}{dx}(f(x).g(x))=f(x)g'(x)+g(x)f'(x)\]
+                    \[D. \; \frac{d}{dx}\left(\frac{f(x)}{g(x)}\right)=\frac{g(x)f'(x)-f(x)g'(x)}{g^2(x)}\]
+                    \[E. \; \frac{d}{dx}(f(g(x)))=f'(g(x))g'(x)\]
+                    <strong class="_7a" id="a47">3. Differentiation using substitution:</strong>
+                    \[Following \; substitutions \; are \; normally \; used \; to \; simplify \; these \; expression.\]
+                    \[A. \; \sqrt{x^2+a^2} \; by \; substituting \; x=atan\theta, \; where \; -\frac{\pi}{2}< \theta <
+                        \frac{\pi}{2}\] \[B. \; \sqrt{a^2-x^2} \; by \; substituting \; x=asin\theta, \; where \;
+                        -\frac{\pi}{2}\le \theta \le \frac{\pi}{2}\] \[C. \; \sqrt{x^2-a^2} \; by \; substituting \;
+                        x=asec\theta, \; where \; \theta\in[0,\pi], \; \theta \ne \frac{\pi}{2}\] \[D. \;
+                        \sqrt{\frac{x+a}{a-x}} \; by \; substituting \; x=acos\theta, \; where \; \theta\in[0,\pi]\]
+                        <strong class="_7a" id="a48">4. Parametric Differentiation:</strong>
+                        \[If \; y=f(\theta) \& x=g(\theta) \; where \; \theta \; is \; a \; parameter, \; then \;
+                        \frac{dy}{dx}=\frac{dy/d\theta}{dx/d\theta}\]
+                        <strong class="_7a" id="a49">5. Derivative of one function with respect to another:</strong>
+                        \[Let \; y=f(x); \; z=g(x) \; then \; \frac{dy}{dz}=\frac{dy/dx}{dz/dx}=\frac{f'(x)}{g'(x)}\]
+                        \[If \; F(x)=\left|\begin{array}af(x) & g(x) & h(x) \\ l(x) & m(x) & n(x) \\ u(x) & v(x) &
+                        w(x)\end{array}\right|, \; where \; f, \; g, \; h, \; l, \; m, \; n, \; u, \; v, \; w \; are \;
+                        differentiable \; functions \; of \; x,\]
+                        \[then \; F'(x)=\left|\begin{array} af'(x) & g'(x) & h'(x) \\ l(x) & m(x) & n(x) \\ u(x) & v(x)
+                        & w(x)\end{array}\right|+\left|\begin{array} af(x) & g(x) & h(x) \\ l'(x) & m'(x) & n'(x) \\
+                        u(x) & v(x) & w(x)\end{array}\right|+\left|\begin{array} af(x) & g(x) & h(x) \\ l(x) & m(x) &
+                        n(x) \\ u'(x) & v'(x) & w'(x)\end{array}\right|\]
+                </p>
+            </div>
+            <div class="content0" id="application_differentiation">
+                <p>
+                    <strong class="_8a a_active" id="a50" style="color: blueviolet;">1. Equation of tangent and
+                        normal:</strong>
+                    \[Tangent \; at \; (x_1,y_1) \; is \; given \; by \; (y-y_1)=f'(x_1)(x-x_1); \; when, \; f'(x_1) \;
+                    is \; real\]
+                    \[And \; normal \; at \; (x_1,y_1) is (y-y_1)=-\frac{1}{f'(x_1)}(x-x_1), \; when \; f'(x_1) \; is \;
+                    non-zero \; real\]
+                    <strong class="_8a" id="a51">2. Tangent from an external point:</strong>
+                    \[Given \; a \; point \; P(a, b) \; which \; does \; not \; lie \; on \; the \; curve \; y = f(x),
+                    \; then \; the \;
+                    equation \; of \; possible \; tangents \; to \; the \; curve \; y = f(x), \] \[passing \; through \;
+                    (a, b) \;
+                    can \; be \; found \; by \; solving \; for \; the \; point \; of \; contact \; Q, \;
+                    f'(h)=\frac{f(h)-b}{h-a}\]
+                    <!-- <script type="text/tikz" class="scroll">
+                        \begin{tikzpicture}
+                          \draw (0,3) -- (6,0);
+                          \draw (4,-1.5) arc (0:90:4cm);
+                          \node at (2.55,2.4) {Q(h , f(h))};
+                          \node at (6.7,0) {P(a, b)};
+                          \node at (4,-1.8) {y = f(x)};
+                          \fill (1.8,2.09) circle (1.5pt);
+                          \fill (6,0) circle (1.5pt);
+                        \end{tikzpicture}
+                    </script> -->
+                    <img src="app_diff.png" style="scale: 0.5;">
+                    \[And \; equation \; of \; tangent \; is \; y-b=\frac{f(h)-b}{h-a}(x-a)\]
+                    <strong class="_8a" id="a52">3. Length of tangent, normal, subtangent, subnormal</strong>
+                    <img src="app_diff1.png" style="scale: 0.5;">
+                    \[A. \; PT=|k|\sqrt{1+\frac{1}{m^2}} \; = \; Length \; of \; Tangent \; ; \; \; \; B. \;
+                    PN=|k|\sqrt{1+m^2} \; = \; Length \; of \; Normal \; ;\]
+                    \[C. \; TM=\left|\frac{k}{m}\right|= \; Length \; of Subtangent \; ; \; \; \; D. \; MN=|km|=\;
+                    Length \; of \; Subnormal\]
+                    <strong class="_8a" id="a53">4. Angle between the curves:</strong>
+                    \[Angle \; between \; two \; intersecting \; curves \; is \; defined \; as \; the \; acute \; angle
+                    \; between \;
+                    their \; tangents \; (or \; normals) \] \[at \; the \; point \; of \; intersection \; of \; two \;
+                    curves \; (as \; shown \;
+                    in \; figure), \; tan\theta=\left|\frac{m_1-m_2}{1+m_1m_2}\right|\]
+                    <strong class="_8a" id="a54">5. Rolle's Theorem :</strong>
+                    \[If \; a \; function \; f \; defined \; on \; [a, b] \; is \]
+                    \[(i) \; continuous \; on \; [a, b] \]
+                    \[(ii) \; derivable \; on \; (a, b) \; and \]
+                    \[(iii) \; f(a) = f(b), \]
+                    \[then \; there \; exists \; at \; least \; one \; real \; number \; c \; between \; a \; and \; b
+                    \;
+                    (a < c < b) \; such \; that \; f'(c)=0\] <strong class="_8a" id="a55">6. Lagrange's Mean Value
+                        Theorem (LMVT) :</strong>
+                        \[If \; a \; function \; f \; defined \; on \; [a, b] \; is \]
+                        \[(i) \; continuous \; on \; [a, b] \; and \]
+                        \[(ii) \; derivable \; on \; (a, b), \]
+                        \[then \; there \; exists \; at \; least \; one \; real \; numbers \; between \; a \; and \; b
+                        \;
+                        (a < c < b) \; \; such \; that \; \frac{f(b)-f(a)}{b-a}=f'(c)\] <strong class="_8a" id="a56">7.
+                            Useful Formulae of
+                            Mensuration to Remember:</strong>
+                            \[A. \; Volume \; of \; a \; cuboid \; = \; \ell bh \]
+                            \[B. \; Surface \; area \; of \; cuboid \; = \; 2(\ell b + bh + h\ell) \]
+                            \[C. \; Volume \; of \; cube \; = \; a^3 \]
+                            \[D. \; Surface \; area \; of \; cube \; = \; 6a^2 \]
+                            \[E. \; Volume \; of \; a \; cone \; = \; \frac{1}{3}\pi r^2h \]
+                            \[F. \; Curved \; surface \; area \; of \; cone \; = \; \pi r \ell (\ell = \; slant \;
+                            height)
+                            \]
+                            \[G. \; Curved \; surface \; area \; of \; a \; cylinder \; = \; 2\pi rh \]
+                            \[H. \; Total \; surface \; area \; of \; a \; cylinder \; = \; 2\pi rh \; + \; 2\pi r \]
+                            \[I. \; Volume \; of \; a \; sphere \; = \; \frac{4}{3}\pi r^3 \]
+                            \[J. \; Surface \; area \; of \; a \; sphere \; = \; 4\pi r^2 \]
+                            \[K. \; Area \; of \; a \; circular \; sector \; = \; \frac{1}{2}r^2\theta, \; when \;
+                            \theta
+                            \; is \; in \; radians \]
+                            \[L. \; Volume \; of \; a \; prism \; = \; (area \; of \; the \; base) \; \times \; (height)
+                            \]
+                            \[M. \; Lateral \; surface \; area \; of \; a \; prism \; = \; (perimeter \; of \; the \;
+                            base) \; \times \; (height) \]
+                            \[N. \; Total \; surface \; area \; of \; a \; prism \; = \; (lateral \; surface \; area) \;
+                            +
+                            \; 2 (area \; of \; the \; base) \]
+                            \[(Note \; that \; lateral \; surfaces \; of \; a \; prism \; are \; all \; rectangle) \]
+                            \[O. \; Volume \; of \; a \; pyramid \; = \; \frac{1}{3}(area \; of \; the \; base) \;
+                            \times
+                            \; (height) \]
+                            \[P. \; Curved \; surface \; area \; of \; a \; pyramid \; = \; \frac{1}{2}(perimeter \; of
+                            \;
+                            the \; base) \; \times \; (slant \; height) \]
+                            \[(Note \; that \; slant \; surfaces \; of \; a \; pyramid \; are \; triangles)\]
+                </p>
+            </div>
+            <div class="content0" id="indefinite_integration">
+                <p>
+                    <strong class="_9a a_active" id="a57" style="color: blueviolet;">1. Introduction:</strong>
+                    \[If \; f \; \& \; g \; are \; functions \; of \; x \; such \; that \; g'(x) \; = \; f(x) \; then,
+                    \; \int f(x)dx \; = \; g(x) \; + \; c \; \Leftrightarrow \; \frac{d}{dx}{g(x)+c} \; = \; f(x), \;
+                    where \; c \; is \; called \; the \; constant \; of \; integration\]
+                    <strong class="_9a" id="a58">2. Standard Formula:</strong>
+                    \[A. \; \int(ax+b)^ndx=\frac{(ax+b)^{n+1}}{a(n+1)}+c, \; n \neq -1\]
+                    \[B. \; \int\frac{dx}{ax+b}=\frac{1}{a} \ell n (ax+b) +c\]
+                    \[C. \; \int e^{ax+b} dx=\frac{1}{a}e^{ax+b}+c\]
+                    \[D. \int a^{px+q} dx=\frac{1}{p}\frac{a^{px+q}}{\ell na}+c, \; a>0\]
+                    \[E. \int sin(ax+b)dx=-\frac{1}{a}cos (ax + b) + c\]
+                    \[F. \int cos (ax + b) dx=\frac{1}{a}sin (ax + b) + c\]
+                    \[G. \int tan(ax + b) dx=\frac{1}{a}\ell n \; sec(ax + b) + c\]
+                    \[H. \int cot(ax + b) dx=\frac{1}{a}\ell n \; sin(ax + b) + c\]
+                    \[I. \int sec^2 (ax + b) dx=\frac{1}{a}tan (ax + b) + c\]
+                    \[J. \int cosec^2(ax + b) dx=-\frac{1}{a}cot (ax + b) + c\]
+                    \[K. \int secx dx=\ell n (secx + tanx) + c \; OR \; \ell n tan
+                    \left(\frac{\pi}{4}+\frac{x}{2}\right)+c\]
+                    \[L. \int cosec x dx = \ell n (cosecx - cotx) + c, \; OR \; \ell n tan\frac{x}{2}+c, \; OR \; -\ell
+                    n (cosecx + cotx) + c\]
+                    \[M. \int \frac{dx}{\sqrt{a^2-x^2}}=sin^{-1}\frac{x}{a}+c\]
+                    \[N. \int \frac{dx}{a^2+x^2}=\frac{1}{a}tan^{-1}\frac{x}{a}+c\]
+                    \[O. \int \frac{dx}{|x|\sqrt{x^2-a^2}}=\frac{1}{a}sec^{-1}\frac{x}{a}+c\]
+                    \[P. \int \frac{dx}{\sqrt{x^2+a^2}}=\ell n\left[x+\sqrt{x^2+a^2}\right]+c\]
+                    \[Q. \int \frac{dx}{\sqrt{x^2-a^2}}=\ell n\left[x+\sqrt{x^2-a^2}\right]+c\]
+                    \[R. \int \frac{dx}{a^2-x^2}=\frac{1}{2a}\ell n\left|\frac{a+x}{a-x}\right|\]
+                    \[S. \int \frac{dx}{x^2-a^2}=\frac{1}{2a}\ell n\left|\frac{x-a}{x+a}\right|\]
+                    \[T. \int \sqrt{a^2-x^2}dx=\frac{x}{2}\sqrt{a^2-x^2}+\frac{a^2}{2}sin^{-1}\frac{x}{a}+c\]
+                    \[U. \int \sqrt{x^2+a^2}dx=\frac{x}{2}\sqrt{x^2+a^2}+\frac{a^2}{2}\ell
+                    n\left[\frac{x+\sqrt{x^2+a^2}}{a}\right] + c\]
+                    \[V. \int \sqrt{x^2-a^2}dx=\frac{x}{2}\sqrt{x^2-a^2}-\frac{a^2}{2}\ell
+                    n\left[\frac{x+\sqrt{x^2-a^2}}{a}\right] + c\]
+                    <strong class="_9a" id="a59">3. Integration by Subsitutions:</strong>
+                    \[If \; we \; subsitute \; f(x) \; = \; t, \; then \; f'(x) dx = dt\]
+                    <strong class="_9a" id="a60">4. Integration by Part :</strong>
+                    \[\int(f(x)g(x))dx=f(x)\int (g(x))dx-\int \left(\frac{d}{dx}(f(x))\int (g(x))dx\right)dx\]
+                    <strong class="_9a" id="a61">5. Integration of type A:</strong>
+                    \[\int \frac{dx}{ax^2+bx+c}, \; \int \frac{dx}{\sqrt{ax^2+bx+c}}, \; \int \sqrt{ax^2+bx+c}dx\]
+                    \[Make \; the \; substitution \; x+\frac{b}{2a}=t\]
+                    <strong class="_9a" id="a62">6. Integration of type B:</strong>
+                    \[\int \frac{px+q}{ax^2+bx+c}dx, \; \int \frac{px+q}{\sqrt{ax^2+bx+c}}dx, \; \int
+                    (px+q)\sqrt{ax^2+bx+c}dx\]
+                    \[Make \; the \; substitution \; x+\frac{b}{2a}=t, \]\[ then \; split \; the \; integral \; as \;
+                    some \; of \; two \;
+                    integrals \; one \; containing \; the \; linear \; term \; and \; the \; other \; containing \;
+                    constant \;
+                    term\]
+                    <strong class="_9a" id="a63">7. Integration of type C:</strong>
+                    \[\int \frac{x^2+1}{x^4+Kx^2+1}dx \; \; where \; K \; is \; any \; constant\]
+                    \[Divide \; Nr \; and \; Dr \; by \; x^2 \; \& \; x\pm \frac{1}{x}=t\]
+                    <strong class="_9a" id="a64">8. Integration of type D:</strong>
+                    \[\int \frac{dx}{(ax+b)\sqrt{px+q}}, \; OR \; \int \frac{dx}{(ax^2+bx+c)\sqrt{px+q}} \; \; \; Put \;
+                    px+q=t^2\]
+                    <strong class="_9a" id="a65">9. Integration of type E:</strong>
+                    \[\int \frac{dx}{(ax+b)\sqrt{px^2+qx+r}}, \; \; \; Put \; ax + b=\frac{1}{t}\]
+                    \[\int \frac{dx}{(ax^2+b)\sqrt{px^2+q}}, \; \; \; Put \; x=\frac{1}{t}\]
+                    <strong class="_9a" id="a66">10. Integration of trigonometric functions:</strong>
+                    \[A. \int \frac{dx}{a+bsin^2 x}, \; OR \; \int \frac{dx}{a+bcos^2 x}, \; OR \; \int \frac{dx}{asin^2
+                    x+bsinxcosx+ccos^2 x} \; \; \; Put \; tanx=t\]
+                    \[B. \int \frac{dx}{a+bsin x}, \; OR \; \int \frac{dx}{a+bcos x}, \; OR \; \int
+                    \frac{dx}{a+bsinx+ccosx} \; \; \; Put \; tan\frac{x}{2}=t\]
+                    \[C. \int \frac{a.cos x b.sinx c}{\ell .cos x m.sin x n}dx \; \; \; Express \; Nr \; \equiv \;
+                    A(Dr)+B\frac{d}{dx}(Dr)+c \; \& \; proceed\]
+                </p>
+            </div>
+            <div class="content0" id="definite_integration">
+                <p>
+                    <strong class="_10a a_active" id="a67" style="color: blueviolet;">1. Properties of definite
+                        integral:</strong>
+                    \[A. \; \int_a^b f(x)dx=\int_a^b f(t)dt, \; \; \; \; B. \; \int_a^b f(x)dx=-\int_b^a f(x)dx\]
+                    \[C. \; \int_a^b f(x)dx=\int_a^c f(x)dx+\int_c^b f(x)dx\]
+                    \[D. \; \int_{-a}^a f(x)dx=\int_0^a (f(x)+f(-x))dx= 2\int_0^a f(x)dx, \; \; \; when \; f(-x)=f(x)\]
+                    \[\hspace{8.2cm}= 0, \; \; \; when \; f(-x)=-f(x)\]
+                    \[E. \; \int_a^b f(x)dx=\int_a^b f(a+b-x)dx\]
+                    \[F. \; \int_0^a f(x)dx=\int_0^a f(a-x)dx\]
+                    \[G. \; \int_0^{2a} f(x)dx=\int_0^a (f(x)+f(2a-x))dx=2\int_0^a f(x)dx, \; \; \; when \;
+                    f(2a-x)=f(x)\] \[\hspace{9cm}= 0, \; \; \; when \; f(2a-x)=-f(x)\]
+                    \[H. \; If \; f(x) \; is \; a \; periodic \; function \; with \; period \; T, \; then\]
+                    \[\int_0^{nT} f(x)dx=n\int_0^T f(x)dx, \; \; n\in Z, \; \; \; \; \int_a^{a+nT} f(x)dx=n\int_0^T
+                    f(x)dx, \; \; n\in Z, \; \; a\in R\]
+                    \[\int_{mT}^{nT} f(x)dx=(n-m)\int_0^T f(x)dx, \; \; n\in Z, \; \; \; \; \int_{nT}^{a+nT}
+                    f(x)dx=\int_0^a f(x)dx, \; \; n\in Z, \; \; a\in R\]
+                    \[\int_{a+nT}^{b+nT} f(x)dx=\int_a^b f(x)dx, \; \; n\in Z, \; \; a,b\in R\]
+                    \[I. \; If \; \psi(x) \leq f(x) \leq \phi(x) \; for \; a \leq x \leq b,\]
+                    \[then \; \int_a^b \psi(x)dx \leq \int_a^b f(x)dx \leq \int_a^b \phi(x)dx\]
+                    \[J. \; If \; m \; \leq f(x) \leq M \; for \; a \leq x \leq b, \; then \; m (b - a) \leq \int_a^b
+                    f(x)dx \leq M (b - a)\]
+                    \[K. \; If \; f(x) \geq 0 \; on \; [a, b] \; then \; \int_a^b f(x)dx \geq 0\]
+                    <strong class="_10a" id="a68">2. Leibnitz Theorem:</strong>
+                    \[If \; F(x)=\int_{g(x)}^{h(x)}f(t)dt, \; then \; \frac{dF(x)}{dx}=h'(x) f(h(x)) - g'(x) f(g(x))\]
+                </p>
+            </div>
+            <div class="content0" id="fundamentals">
+                <p>
+                    <strong class="_11a" id="a69" style="color: blueviolet;">1. Intervals:</strong>
+                    \[Intervals \; are \; basically \; subsets \; of \; R \; and \; are \; commonly \; used \; in \;
+                    solving \;
+                    inequalities \; or \; in \; finding \; domains. \; If \; there \; are \; two \; numbers \; a, \; b
+                    \in R \]
+                    \[such \; that \; a \le b, \; we \; can \; define \; four \; types \; of \; intervals \; as \;
+                    follows: \]
+                    \[Symbols \; Used:\]
+                    \[A. \; Open \; interval: \; (a, b) = {x : a < x < b} \; i.e. \; end \; points \; are \; not \;
+                        included. \; ( ) \; or \; ] [ \] \[B. \; Closed \; interval: \; [a, b]={x : a \leq x \leq b} \;
+                        i.e. \; end \; points \; are \; also \; included. \; [ ] \; This \; is \; possible \; only \;
+                        when \; both \; a \; and \; b \; are \; finite. \] \[C. \; Open-closed \; interval: \; (a, b]={x
+                        : a < x \leq b} \; ( ] \; or \; ] ] \] \[D. \; Closed - open \; interval: \; [a, b)={x : a \leq
+                        x < b} \; [ ) \; or \; [ [ \] \[The \; infinite \; intervals \; are \; defined \; as \; follows:
+                        \] \[A. (a,\infty)={x : x> a} \; \; \; \; \; \; B. [a, \infty) = {x : x \geq a}\]
+                        \[C. (-\infty, b) = {x : x < b} \; \; \; \; \; \; D. (-\infty, b]={x : x \leq b}\] \[E.
+                            (-\infty,\infty)={x : x \in R} \] <strong class="_11a" id="a70">2. Properties of
+                            Modulus:</strong>
+                            \[For \; any \; a, b \in R\]
+                            \[|a| \geq 0, |a| = |-a|, \; \; \; \; |a| \geq a, \; \; \; \; |a| \geq -a, \; \; \; \; |ab|
+                            = |a| |b|,\]
+                            \[\left|\frac{a}{b}\right|=\frac{|a|}{|b|}, \; \; \; \; |a + b| \leq |a| + |b|, \; \; \; \;
+                            |a-b| \geq ||a| - |b||\]
+                            <strong class="_11a" id="a71">3. Trigonometric Functions of Sum or Difference of Two
+                                Angles:</strong>
+                            \[A. \; sin (A \pm B) = sinA cosB \pm cosA sinB\]
+                            \[\therefore 2 sinA cosB = sin(A+B) + sin(A-B) \; and\]
+                            \[2 cosA sinB = sin(A+B) - sin(A-B)\]
+                            \[B. \; cos (A \pm B) = cosA cosB - sinA sinB\]
+                            \[\therefore 2 cosA cosB = cos(A+B) + cos(A-B) \; and\]
+                            \[2sinA sinB = cos(A-B) - cos(A+B)\]
+                            \[C. \; sin^2A - sin^2B = cos^2B - cos^2A = sin (A+B). sin (A-B)\]
+                            \[D. \; cos^2A - sin^2B = cos^2B - sin^2A = cos (A+B). cos (A-B)\]
+                            \[E. \; cot(A \pm B)=\frac{cotAcotB \pm 1}{cotB \pm cotA}\]
+                            \[F. \; tan(A+B+C)=\frac{tanA + tanB + tanC - tanA \; tanB \; tanC}{1 - tanA \; tanB - tanB
+                            \; tanC - tanC \; tanA}\]
+                            <strong class="_11a" id="a72">4. Factorisation of the Sum or Difference of Two Sines or
+                                Cosines:</strong>
+                            \[A. \; sinC + sinD = 2sin\frac{C+D}{2}cos\frac{C-D}{2}\]
+                            \[B. \; sinC - sinD = 2sin\frac{C-D}{2}cos\frac{C+D}{2}\]
+                            \[C. \; cosC + cosD = 2cos\frac{C+D}{2}cos\frac{C-D}{2}\]
+                            \[D. \; cosC - cosD = -2sin\frac{C+D}{2}sin\frac{C-D}{2}\]
+                            <strong class="_11a" id="a73">5. Multiple and Sub-multiple Angles:</strong>
+                            \[A. \; cos 2A = cos^2A - sin^2A = 2cos^2A - 1 = 1 - 2 sin^2A; \; \; \; 2
+                            cos^2\frac{\theta}{2}=1+cos\theta; \; \; \; 2 sin^2\frac{\theta}{2}=1-cos\theta\]
+                            \[B. \; sin 2A = \frac{2 tanA}{1+tan^2A} \; \; \; cos 2A = \frac{1-tan^2A}{1+tan^2A} \; \;
+                            \; tan 2A = \frac{2 tanA}{1-tan^2A}\]
+                            \[C. \; sin 3A = 3 sinA - 4 sin^3A\]
+                            \[D. \; cos 3A = 4 cos^3A - 3 cosA\]
+                            \[E. \; tan 3A=\frac{3 tan A - tan^3A}{1 - 3 tan^2 A}\]
+                            <strong class="_11a" id="a74">6. Important Trigonometric Ratios:</strong>
+                            \[sin n \pi = 0 ; \; \; \; \; cos n \pi = \pm1 ; \; \; \; \; tan n \pi = 0, \; \; where n
+                            \in I\]
+                            <strong class="_11a" id="a75">7. Range of Trigonometric Expression:</strong>
+                            \[-\sqrt{a^2+b^2} \leq asin \theta + bcos \theta \leq \sqrt{a^2+b^2}\]
+                            <strong class="_11a" id="a76">8. Sine and Cosine Series:</strong>
+                            \[sin\alpha + sin(\alpha+\beta) +
+                            sin(\alpha+2\beta)+.....+sin(\alpha+(n-1)\beta)=\frac{sin\frac{n\beta}{2}}{sin\frac{\beta}{2}}sin\left[\alpha+\frac{n-1}{2}\beta\right]\]
+                            \[cos\alpha + cos(\alpha+\beta) +
+                            cos(\alpha+2\beta)+.....+cos(\alpha+(n-1)\beta)=\frac{sin\frac{n\beta}{2}}{sin\frac{\beta}{2}}cos\left[\alpha+\frac{n-1}{2}\beta\right]\]
+                            <strong class="_11a" id="a77">9. Trigonometric Equations:</strong>
+                            \[Principal Solutions:\]
+                            \[Solutions \; which \; lie \; in \; the \; interval \; [0, 2\pi) \; are \; called \;
+                            Principal \; solutions\]
+                            \[General Solution :\]
+                            \[A. \; sin \theta = sin \alpha \implies \theta = n \pi + (-1)^n \alpha \; where \; \alpha
+                            \in \left[-\frac{\pi}{2},\frac{\pi}{2}\right], \; n \in I\]
+                            \[B. \; cos \theta = cos \alpha \implies \theta = 2 n \pi \pm \alpha \; where \; \alpha \in
+                            [0,\pi], \; n \in I\]
+                            \[C. \; tan \theta = tan \alpha \implies \theta = n \pi + \alpha \; where \; \alpha \in
+                            \left[-\frac{\pi}{2},\frac{\pi}{2}\right], \; n \in I\]
+                            \[D. \; sin^2 \theta = sin^2 \alpha, \; cos^2 \theta = cos^2 \alpha, \; tan^2 \theta = tan^2
+                            \alpha, \; \implies \theta = n\pi\pm\alpha\]
+                </p>
+            </div>
+            <div class="content0" id="quadratic">
+                <p>
+                    <strong>1. Quadratic Equation:</strong>
+                    \[ax^2+bx+c=0, \; \; \; a\neq 0\]
+                    \[x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}, \; the \; expression \; b^2 - 4 a c = D \; is \; called \;
+                    discriminant \; of \; quadratic \; equation\]
+                    \[If \; \alpha, \beta \; are \; the \; roots, \; then \; \; A. \; \alpha + \beta = -\frac{b}{a}, \;
+                    \; B. \; \alpha\beta=\frac{c}{a}\]
+                    \[A \; quadratic \; equation \; whose \; roots \; are \; \alpha \; \& \; \beta, \; is \; (x -\alpha)
+                    (x -\beta) = 0 \; i.e. \; x^2 - (\alpha + \beta) x + \alpha\beta = 0\]
+                    <strong>2. Nature of Roots:</strong>
+                    \[Consider \; the \; quadratic \; equation, \; ax^2+ bx + c = 0 \; having \; \alpha, \; \beta \; as
+                    \; its \; roots; \; \; \; D = b^2 - 4ac \; then\]
+                    <img src="discriminant.png">
+                    <br><strong>3. Common Roots:</strong>
+                    \[Consider \; two \; quadratic \; equations \; a_1x^2+ b_1x + c_1= 0 \; \& \; a_2x^2+ b_2x + c_2=
+                    0\]
+                    \[A. \; If \; two \; quadratic \; equations \; have \; both \; roots \; common, \; then \;
+                    \frac{a_1}{a_2}=\frac{b_1}{b_2}=\frac{c_1}{c_2}\]
+                    \[B. \; If \; only \; one \; root \; \alpha \; is \; common, \; then \; \; \; \alpha =
+                    \frac{c_1a_2-c_2a_1}{a_1b_2-a_2b_1} = \frac{b_1c_2-b_2c_1}{c_1a_2-c_2a_1}\]
+                    <strong>4. Range of Quadratic Expression:</strong>
+                    \[If \; f(x)=ax^2+bx+c \; range \; in \; restricted \; domain: Given \; x \in [x_1,x_2]\]
+                    \[A. \; If \; -\frac{b}{2a} \notin [x_1,x_2] \; then, f(x) \in [min(f(x_1),f(x_2)), \;
+                    max(f(x_1),f(x_2))]\]
+                    \[B. \; If \; -\frac{b}{2a} \in [x_1,x_2] \; then, f(x) \in [min(f(x_1),f(x_2),-\frac{D}{4a}), \;
+                    max(f(x_1),f(x_2),-\frac{D}{4a})]\]
+                    <strong>5. Location of Roots:</strong>
+                    \[Let \; f(x) \; = ax² + bx + c, \; where \; a > 0 \; \& a,b,c \in R\]
+                    \[A. \; Conditions \; for \; both \; the \; roots \; of \; f(x) = 0 \; to \; be \; greater \; than
+                    \; aspecified \; number \; 'x_0' \; are \; b^2 - 4ac = 0; \; f(x_0) > 0 \; \& (- b/2a) > x0\]
+                    \[B. \; Conditions \; for \; both \; the \; roots \; of \; f(x) = 0 \; to \; be \; smaller \; than
+                    \; aspecified \; number \; 'x_0' \; are \; b^2 - 4ac = 0; \; f(x_0) > 0 \; \& (- b/2a) < x0\] \[C.
+                        \; Conditions \; for \; both \; the \; roots \; of \; f(x)=0 \; to \; lie \; on \; either \;
+                        side \; of \; the \; number \; 'x_0' \; is \; f(x_0) < 0\] \[D. \; Conditions \; for \; both \;
+                        the \; roots \; of \; f(x)=0 \; to \; be \; confined \; between \; the \; numbers \; x_1 \; and
+                        \; x_2, (x_1 < x_2) \] \[are \; b^2-4ac \geq 0; \; f(x_1)>0; \; f(x_2)>0 \; and \;
+                        x_1<(-\frac{b}{2a}) < x_2\] \[E. \; Conditions \; for \; both \; the \; roots \; of \; f(x)=0 \;
+                            to \; lie \; in \; the \; interval \; (x_1,x_2) \; i.e. \; x_1 < x < x_2 \; is \;
+                            f(x_1).f(x_2) < 0\] </p>
+            </div>
+            <div class="content0" id="sequence">
+                <p>
+                    <strong>1. An arithmetic progression (A.P.):</strong>
+                    \[A. \; a, \; a + d, \; a + 2d,..... a + (n - 1) d \; is \; an \; A.P.\]
+                    \[Let \; a \; be \; the \; first \; term \; and \; d \; be \; the \; common \; difference \; of \;
+                    an \; A.P., \; then \; n^{th} \; term = t_n= a + (n - 1) d\]
+                    \[B. \; The \; sum \; of \; first \; n \; terms \; of \; A.P. \; are \; S_n= \frac{n}{2}[2a + (n -
+                    1) d] = \frac{n}{2}[a+ \ell]\]
+                    \[C. \; r^{th} \; term \; of \; an \; A.P. \; when \; sum \; of \; first \; r \; terms \; is \;
+                    given \; is \; t_r= S_r- S_r- 1\]
+                    \[D. \; Properties \; of \; A.P.:\]
+                    \[i. \; If \; a, b, c \; are \; in \; A.P. \; \rightarrow 2 b = a + c \; \& \; if \; a, b, c, d \;
+                    are \; in \; A.P. \; \rightarrow a + d = b + c\]
+                    \[ii. \; Three \; numbers \; in \; A.P. \; can \; be \; taken \; as \; a - d, a, a + d; \; four \;
+                    numbers \;
+                    in \; A.P. \; can \; be \; taken \; as \; a - 3d, a - d, a + d, a + 3d; \]
+                    \[five \; numbers \; in \; A.P. \; are \; a - 2d, a - d, a, a + d, a + 2d \; \& \; \]
+                    \[six \; terms \; in \; A.P. \; are \; a - 5d, a - 3d, a - d, a + d, a + 3d, a + 5d \; etc\]
+                    \[iii. \; Sum \; of \; the \; terms \; of \; an \; A.P. \; equidistant \; from \; the \; beginning
+                    \; \& \;
+                    end \; = \; sum \; of \; first \; \& \; last \; term\]
+                    \[E. \; Arithmetic \; Mean \; (Mean \; or \; Average) \; (A.M.):\]
+                    \[If \; three \; terms \; are \; in \; A.P. \; then \; the \; middle \; term \; is \; called \; the
+                    \; A.M. \; between \;
+                    the \; other \; two, \; so \; if \; a, b, c \; are \; in \; A.P., \; b \; is \; A.M. \; of \; a \;
+                    \& \; c\]
+                    \[F. \; n - Arithmetic \; Means \; Between \; Two \; Numbers:\]
+                    \[If \; a, b \; are \; any \; two \; given \; numbers \; \& \; a, A_1, A_2,...., A_n, \; b \; are \;
+                    in \; A.P. \; then \; A_1, A_2,...A_n \; are \; the \; n \; A.M.'s \; between \; a \& b\]
+                    \[A_1= a + \frac{b-a}{n+1}, A_2= a + \frac{2(b-a)}{n+1},....., A_n= a + \frac{n(b-a)}{n+1}\]
+                    \[\sum_{r=1}^n A_r = nA \; where \; A \; is \; the \; single \; A.M. \; between \; a \; \& \; b\]
+                    <strong>2. Geometric Progression:</strong>
+                    \[A. \; Properties \; of \; G.P.:\]
+                    \[a, \; ar, \; ar^2, \; ar^3, \; ar^4,...... \; is \; a \; G.P. \; with \; a \; as \; the \; first
+                    \; term \; \& \; r \; as \; common \; ratio\]
+                    \[i. \; n^{th} \; term = a r^{n-1}\]
+                    \[ii. \; Sum \; of \; the \; first \; n \; terms \; i.e. \; S_n = \frac{a(r^n-1)}{r-1} \; when \; r
+                    \neq 1\]
+                    \[\hspace{8cm} = na \; when \; r = 1\]
+                    \[iii. \; Sum \; of \; an \; infinite \; G.P. \; when \; |r| < 1 \; is \; given \; by, \;
+                        S_\infty=\frac{a}{1-r}(|r|< 1 )\] \[B. \; Geometric \; Means \; (Mean \; Proportional) \;
+                        (G.M.): \] \[If \; a, b, c> 0 \; are \; in \; G.P., \; b \; is \; the \; G.M. \; between \; a \&
+                        c, \; then \; b^2 = ac \]
+                        \[C. \; n - Geometric \; Means \; Between \; positive \; number \; a, b:\]
+                        \[If \; a, b \; are \; two \; given \; numbers \; \& \; a, G_1, G_2,....., G_n, \; b \; are \;
+                        in \; G.P.. \; Then \; G_1, G_2, G_3,...., G_n \; are \; n \; G.M.s \; between \; a \; \& \; b\]
+                        \[G_1 = a(b/a)^{1/n+1}, \; G_2 = a(b/a)^{2/n+1},.....,G_n = a(b/a)^{n/n+1}\]
+                        <strong>3. Harmonic Mean (H.M.):</strong>
+                        \[If \; a, b, c \; are \; in \; H.P., \; b \; is \; the \; H.M. \; between \; a \& c, \; then \;
+                        b=\frac{2ac}{a+c}\]
+                        \[H.M. \; H \; of \; a_1, a_2, ........ a_n \; is \; given \; by \frac{1}{H}=\frac{1}{n}
+                        \left[\frac{1}{a_1}+\frac{1}{a_2}+.....+\frac{1}{a_n}\right]\]
+                        \[* \; Important \; Results:\]
+                        \[i. \; \sum_{r=1}^n (a_r \pm b_r) = \sum_{r=1}^n a_r \pm \sum_{r=1}^n b_r \; \; \; ii.
+                        \;\sum_{r=1}^n k a_r=k\sum_{r=1}^n a_r\]
+                        \[iii. \; \sum_{r=1}^n k=nk, \; where \; k \; is \; a \; constant\]
+                        \[iv. \; \sum_{r=1}^n r=1+2+3+.....+n=\frac{n(n+1)}{2}\]
+                        \[v. \; \sum_{r=1}^n r=1^2+2^2+3^2+.....+n^2=\frac{n(n+1)(2n+1)}{6}\]
+                        \[vi. \; \sum_{r=1}^n r=1^3+2^3+3^3+.....+n^3=\frac{n^2(n+1)^2}{4}\]
+                </p>
+            </div>
+            <div class="content0" id="binomial">
+                <p>
+                    <strong>1. Statement of Binomial theorem: </strong>
+                    \[If \; a, b \in R \; and \; n \in N, \; then \; (a+b)^n= \; ^nC_0 \; a^nb^0 + \; ^nC_1 \;
+                    a^{n-1}b^1 + \; ^nC_2 \; a^{n-2}b^2 +.....+ \; ^nC_r \; a^{n-r}b^r +.....+ \; ^nC_n \; a^0b^n\]
+                    \[= \sum_{r=0}^n \; ^nC_r a^{n-r}b^r\]
+                    <strong>2. Properties of Binomial Theorem: </strong>
+                    \[A. \; General term: T_{r+1}=\;^nC_r a^{n-r} b^r\]
+                    \[B. \; Middle term (s): \]
+                    \[i. \; If \; n \; is \; even, \; there \; is \; only \; one \; middle \; term, \; which \; is \;
+                    \left(\frac{n+2}{2}\right)^{th} term\]
+                    \[ii. \; If \; n \; is \; odd, \; there \; are \; two \; middle \; terms, \; which \; are \;
+                    \left(\frac{n+1}{2}\right)^{th} \; and \left(\frac{n+1}{2}+1\right)^{th} \; terms\]
+                    <strong>3. Multinomial Theorem: </strong>
+                    \[(x_1+x_2+x_3+.....+x_k)^n= \sum_{r_1+r_2+...+r_k=n} \frac{n!}{r_1!r_2!...r_k!} \;
+                    x_1^{r_1}.x_2^{r_2}...x_k^{r_k}\]
+                    \[Here \; total \; number \; of \; terms \; in \; the \; expansion = \; ^{n+k-1}C_{k-1}\]
+                    <strong>4. Application of Binomial Theorem: </strong>
+                    \[If \; (\sqrt{A}+B)^n = I + f \; where \; I \; and \; n \; are \; positive \; integers, \; n \;
+                    being \; odd \; and \; 0 < f < 1 \; then \; (I + f) f=k^n \; where \; A - B^2=k> 0 \; and \;
+                        \sqrt{A}-B < 1\] \[If \; n \; is \; an \; even \; integer, \; then \; (I + f) (1 - f)=k^n\]
+                            <strong>5. Properties of Binomial Coefficients: </strong>
+                            \[A. \; ^nC_0+\; ^nC_1+\; ^nC_2+.....+\; ^nC_n=2^n\]
+                            \[B. \; ^nC_0-\; ^nC_1+\; ^nC_2-\; ^nC_3+.....+\;(-1)^n \; ^nC_n=0\]
+                            \[C. \; ^nC_0+\; ^nC_2+\; ^nC_4+.....=\; ^nC_1+\; ^nC_3+\; ^nC_5+.....=2^{n-1}\]
+                            \[D. \; ^nC_r+ \; ^nC_{r-1}= \; ^{n+1}C_r \; \; \; E. \; \frac{^nC_r}{^nC_{r-1}} =
+                            \frac{n-r+1}{r}\]
+                            <strong>6. Binomial Theorem For Negative Integer Or Fractional Indices:</strong>
+                            \[(1-x)^n=1 \; + \;
+                            nx+\frac{n(n-1)}{2!}x^2+\frac{n(n-1)(n-2)}{3!}x^3+.....+\frac{n(n-1)(n-2).......(n-r+1)}{r!}x^r+
+                            \;.....|x|< 1\] \[T_{r+1}=\frac{n(n-1)(n-2).........(n-r+1)}{r!}x^r \] </p>
+            </div>
+            <div class="content0" id="permutation">
+                <p>
+                    <strong>1. Arrangement: </strong>
+                    \[Number \; of \; permutations \; of \; n \; different \; things \; taken \; r \; at \; a \; time =
+                    \;^nP_r= n (n - 1) (n - 2)... (n - r + 1)=\frac{n!}{(n-r)!}\]
+                    <strong>2. Circular Permutation: </strong>
+                    \[The \; number \; of \; circular \; permutations \; of \; n \; different \; things \; taken \; all
+                    \; at \; a \; time \; is: \; (n - 1)!\]
+                    <strong>3. Selection: </strong>
+                    \[Number \; of \; combinations \; of \; n \; different \; things \; taken \; r \; at \; a \; time =
+                    \; ^nC_r=\frac{n!}{n!(n-r)!}=\frac{^nP_r}{r!}\]
+                    \[The \; number \; of \; permutations \; of \; 'n' \; things, \; taken \; all \; at \; a \; time, \;
+                    when \; 'p' \; of \; them \; are \; similar \; \& \; of \; one \; type, \; q \; of \; them \; are \;
+                    similar \; \& \; of \; another \; type,\]
+                    \['r' \; of \; them \; are \; similar \; \& \; of \; a \; third \; type \; \& \; the \; remaining \;
+                    n - (p + q + r) \; are \; all \; different \; is \frac{n!}{p!q!r!}\]
+                    <strong>4. Selection of one or more objects: </strong>
+                    \[A. \; Number \; of \; ways \; in \; which \; atleast \; one \; object \; be \; selected \; out \;
+                    of \; 'n' \; distinct \; objects \; is \; ^nC_1+ \; ^nC_2+ \; ^nC_3 +.....+ \; ^nC_n = 2^n-1\]
+                    \[B. \; Number \; of \; ways \; in \; which \; atleast \; one \; object \; may \; be \; selected \;
+                    outof \; 'p' \; alike \; objects \; of \; one \; type \; 'q' \; alike \; objects \; of \; second \;
+                    type \] \[and \; 'r' \; alike \; of \; third \; type \; is \; (p + 1) (q + 1) (r + 1) - 1\]
+                    \[C. \; Number \; of \; ways \; in \; which \; atleast \; one \; object \; may \; be \; selected \;
+                    from \; 'n' \; objects \; where \; 'p' \; alike \; of \; one \; type \; 'q' \; alike \; of \; second
+                    \; type \] \[and \; 'r' \; alike \; of \; third \; type \; and \; rest \; n - (p + q + r) \; are \;
+                    different, \; is \; (p + 1) (q + 1) (r + 1) 2n^{n-(p+q+r)}-1\]
+                    <strong>5. Multinomial Theorem: </strong>
+                    \[Coefficient \; of \; x^r \; in \; expansion \; of \; (1 - x)^{-n}= \; ^{n+r-1}C_r(n \in N)\]
+                    \[Let \; N = p^a q^b r^c..... \; where \; p, q, r..... \; are \; distinct \; primes \; \& \; a, b,
+                    c..... \; are \; natural \; numbers \; then: \]
+                    \[A. \; The \; total \; numbers \; of \; divisors \; of \; N \; including \; 1 \; \& \; N \; is \; =
+                    (a + 1) (b + 1) (c + 1).....\]
+                    \[B. \; The \; sum \; of \; these \; divisors \; is= (p^0 + p^1 + p^2 +.....+ p^a) (q^0 + q^1 + q^2
+                    +.....+ q^b) (r^0 + r^1 + r^2 +.....+ r^c).....\]
+                    \[C. \; Number \; of \; ways \; in \; which \; N \; can \; be \; resolved \; as \; a \; product \;
+                    of \; two \; factors \; is = \frac{1}{2}(a+1)(b+1)(c+1)..... \; if \; N \; is \; not \; a \; perfect
+                    \; square\]
+                    \[\hspace{8cm} =\frac{1}{2}[(a+1)(b+1)(c+1).....+1 \; if \; N \; is \; a \; perfect \; square]\]
+                    \[D. \; Number \; of \; ways \; in \; which \; a \; composite \; number \; N \; can \; be \;
+                    resolved \; into \; two \; factors \; which \; are \; relatively \; prime \; (one \; coprime) \; to \;
+                    each \; other;\] \[is \; equal \; to \; 2^{n-1} \; where \; n \; is \; the \; number \; of \; different
+                    \; prime \; factor \; in \; N\]
+                    <strong>6. Dearrangement: </strong>
+                    \[Number \; of \; ways \; in \; which \; 'n' \; letters \; can \; be \; put \; in \; 'n' \;
+                    corresponding \; envelopes \; such \; that \; no \; letter \; goes \; to \; correct \; envelope \;
+                    is \] \[n! \left(1- \frac{1}{1!} + \frac{1}{2!} - \frac{1}{3!} +
+                    \frac{1}{4!}+.....+(-1)^n\frac{1}{n!}\right)\]
+                </p>
+            </div>
+            <div class="content0" id="probability">
+                <p>
+                    <strong>1. Classical (A priori) Definition of Probability: </strong>
+                    \[If \; an \; experiment \; results \; in \; a \; total \; of \; (m + n) \; outcomes \; which \; are
+                    \; equally \; likely \; and \; mutually \; exclusive \; with \; one \; another \; and \]
+                    \[if \; 'm' \; outcomes \; are \; favorable \; to \; an \; event \; 'A' \; while \; 'n' \; are \;
+                    unfavorable, \; then \; the \; probability \; of \; occurrence \; of \; the \; event \; 'A'\]
+                    \[= P(A) = m/(m+n)= \frac{n(A)}{n(S)}\]
+                    \[We \; say \; that \; odds \; in \; favour \; of \; 'A' \; are \; m : n, \; while \; odds \;
+                    against \; 'A' \; are \; n : m\]
+                    \[P(\bar A)=\frac{n}{m+n}=1-P(A)\]
+                    <strong>2. Different Properties of probability: </strong>
+                    \[A. \; Addition \; theorem \; of \; probability:\]
+                    \[P(A \cup B) = P(A) + P(B) - P(A \cap B)\]
+                    \[B. \; De Morgan's \; Laws:\]
+                    \[i. \; (A \cup B)^c= A^c \cap B^c \; \; \; \; ii. \; (A \cap B)^c= A^c \cup B^c\]
+                    \[C. \; Distributive \; Laws: \]
+                    \[i. \; A \cup (B \cap C)=(A \cup B) \cap (A \cup C) \; \; \; \; ii. \; A \cap (B \cup C)=(A \cap B) \cup (A \cap C)\]
+                    \[iii. \; P(A \; or \; B \; or \; C) = P(A) + P(B) + P(C)- P(A \cap B) - P(B  \cap C) - P(C \cap A)+ P(A \cap B \cap C)\]
+                    \[iv. \; P(at \; least \; two \; of \; A,B,C \; occur) = P(A \cap B) + P(B  \cap C) + P(C \cap A) - 2P(A \cap B \cap C)\]
+                    \[v. \; P(exactly \; two \; of \; A,B,C \; occur) = P(A \cap B) + P(B  \cap C) + P(C \cap A) - 3P(A \cap B \cap C)\]
+                    \[vi. \; P(exactly \; one \; of \; A,B,c \; occur) = P(A) + P(B) + P(C)- 2P(A \cap B) - 2P(B  \cap C) - 2P(C \cap A)+ 3P(A \cap B \cap C)\]
+                    <strong>3. Conditional Probability: </strong>
+                    \[P(A/B)= \frac{P(A \cap B)}{P(B)}\]
+                    <strong>4. Binomial Probability Theorem: </strong>
+                    \[If \; an \; experiment \; is \; such \; that \; the \; probability \; of \; success \; or \; failure \; does \; not \; change \; with \; trials, \; then \; the \; probability \; of \; getting \] 
+                    \[exactly \; r \; success \; in \; n \; trials \; of \; an \; experiment \; is \; ^nC_r p^r \; q^n-r, \; where \; 'p' \; is \; the \; probability \; of \; a \; success \; and \; q \; is \; the \; probability \; of \; a \; failure. \] 
+                    \[Note \; that \; p+q=1\]
+                    <strong>5. Expectation: </strong>
+                    \[If \; a \; value \; M_i \; is \; associated \; with \; a \; probability \; of \; p_i, \; then \; the \; expectation \; is \; given \; by  \sum p_iM_i\]
+                    <strong>6. Total Probability Theorem: </strong>
+                    \[P(A)= \sum_{i=1}^n P(B_i). P(A/B_i)\]
+                    <strong>7. Bayes's Theorem:</strong>
+                    \[If \; an \; event \; A \; can \; occur \; with \; one \; of \; the \; n \; mutually \; exclusive \; and \; exhaustive \; events \; B_1, B_2,....,B_n \; and \]  
+                    \[the \; probabilities \; P(A/B_1),P(A/B_2),.....,P(A/B_n) \; are \; known, \; then \; P(B_i/A)= \frac{P(B_i).P(A/B_i)}{\sum_{i=1}^n P(B_i).P(A/B_i)} B_1,B_2,B_3,.....,B_n\]
+                    \[A= (A \cap B_1) \cup (A \cap B_2) \cup (A \cap B_3) \cup ..... \cup (A \cap B_n)\]
+                    \[P(A)=P(A \cap B_1)+P(A \cap B_2)+P(A \cap B_3)+.....+P(A \cap B_n)= \sum_{i=1}^n P(A \cap B_i)\]
+                    <strong>8. Binomial Probability Distribution: </strong>
+                    \[A. \; Mean \; of \; any \; probability \; distribution \; of \; a \; random \; variable \; is \; given \; by:\]
+                    \[\mu = \frac{\sum P_i \; X_i}{\sum P_i}= \sum P_i \; X_i = np\]
+                    \[n= number \; of \; trials, \; \; \; p=probability \; of \; success \; in \; each \; probability, \; \; \; q=probability \; of \; failure\]
+                    \[B. \; Variance \; of \; a \; random \; variable \; is \; given \; by, \sigma^2 = \sum (X_i- \mu )^2. P_i= \sum P_i  X_i^2- \mu ^2 = npq \]
+                </p>
+            </div>
+            <div class="content0" id="complex">
+                <p>
+                    <strong>1. The complex number system: </strong>
+                    \[If \; z = a + ib, \; then \; a - ib \; is \; called \; congugate \; of \; z \; and \; is \; denoted \; by \; \bar z\]
+                    <strong>2. Equality In Complex Number: </strong>
+                    \[z_1=z_2 \implies Re(z_1)=Re(z_2) \; and \; I_m(z_1)=I_m(z_2)\]
+                    <strong>3. Properties of arguments: </strong>
+                    \[A. \; arg(z_1z_2)=arg(z_1)+arg(z_2) \; + \; 2m \pi \; for \; some \; integer \; m\]
+                    \[B. \; arg(z_1/z_2)=arg(z_1)-arg(z_2) \; + \; 2m \pi \; for \; some \; integer \; m\]
+                    \[C. \; arg(z^2)=2arg(z) \; + \; 2m \pi \; for \; some \; integer \; m\]
+                    \[D. \; arg(z)=0 \implies z \; is \; a \; positive \; real \; number\]
+                    \[E. \; arg(z)= \pm \pi/2 \implies z \; is \; purely \; imaginary \; and \; z \neq 0\]
+                    <strong>4. Properties of conjugates: </strong>
+                    \[A. \; |z| = |\bar z| \; \; \; B. \; z \bar z = |z|^2 \; \; \; C. \; \overline{z_1 + z_2}= \bar z_1 + \bar z_2\]
+                    \[D. \; \overline{z_1 - z_2}= \bar z_1 - \bar z_2 \; \; \; E. \; \overline{z_1z_2}= \bar z_1 \bar z_2 \; \; \; F. \; \overline{\left(\frac{z_1}{z_2}\right)} = \frac{ \bar z_1}{ \bar z_2} \; \; \; (z_2 \neq 0)\]
+                    \[F. \; \left|z_1+z_2\right|^2=(z_1+z_2) \overline{(z_1+z_2)}= |z_1|^2+|z_2|^2+ z_1 \bar z_2 + \bar z_1z_2\]
+                    \[G. \; \overline{(\bar z_1)} = z \; \; \; H. \; If \; w=f(z), \; then \; \bar w = f( \bar z) \; \; \; I. \; arg(z) + arg( \bar z)\]
+                    <strong>5. Rotation theorem: </strong>
+                    \[If \; P(z_1), \; Q(z_2) \; and \; R(z_3) \; are \; three \; complex \; numbers \; and \; \angle PQR = \theta, \; then \; \left(\frac{z_3-z_2}{z_1-z_2}\right) = \left|\frac{z_3-z_2}{z_1-z_2}\right| e^{i \theta }\]
+                    <strong>6. Demoivre's Theorem: </strong>
+                    \[If \; n \; is \; any \; integer \; then\]
+                    \[A. \; (cos \theta + isin \theta )^n = cosn \theta +isinn \theta \]
+                    \[B. \; (cos \theta _1 + isin \theta _1) \; (cos \theta _2 + isin \theta _2) \; (cos \theta _3 + isin \theta _3) ..... (cos \theta _n + isin \theta _n)=cos( \theta _1+ \theta _2+ \theta _3+.....+ \theta _n) + isin( \theta _1+ \theta _2+ \theta _3+.....+ \theta _n)\]
+                    <strong>7. Cube Root Of Unity: </strong>
+                    \[A. \; The cube \; root \; of \; unity \; are \; 1, \frac{-1+i \sqrt{3}}{2}, \frac{-1-i \sqrt{3}}{2}\]
+                    \[B. \; If \; \omega \; is \; one \; of \; the \; imaginary \; cube \; root \; of \; unity \; then \; 1+ \omega + \omega ^2 = 0. \; In \; general \; 1+ \omega ^r + \omega ^{2r}=0, \; where \; r \in N \; ut \; not \; the \; multiple \; of \; 3\]
+                    <strong>8. Geometrical Properties: </strong>
+                    \[A. \; Distance formula: |z_1-z_2|\]
+                    \[B. \; Section formula: z= \frac{mz_2+nz_1}{m+n} \; (internal \; division), \; z= \frac{mz_2-nz_1}{m-n} \; (external \; division)\]
+                    \[i. \; amp(z)= \theta \; is \; a \; ray \; eamnating \; from \; the \; origin \; inclined \; at \; an \; angle \; \theta \; to \; the \; x-axis\]
+                    \[ii. \; |z-a|=|z-b| \; is \; the \; perpendicular \; bisector \; of \; the \; line \; joining \; a \; to \; b\]
+                    \[iii. \; If \; \left| \frac{z-z_1}{z-z_2}\right|= k \neq 1, 0, \; then \; locus \; of \; z \; is \; circle\]
+                </p>
+            </div>
+            <div class="content0" id="vector">
+                <p>
+                    <strong>1. Position vector of a point: </strong>
+                    \[Let \; O \; be \; a \; fixed \; origin, \; then \; the \; postion \; vector \; of \; a \; point \; P \; is \; the \; vector \; \overrightarrow{OP}. \; If \; \vec a \; and \; \vec b \; are \; positon \; vector \; of two \; points \; A \; and \; B, \; then\]
+                    \[\overrightarrow{AB} = \vec b - \vec a = p.v. \; of \; B - p.v. \; of \; A\]
+                    \[Distance \; between \; the \; two \; points \; A(\vec a) \; and B(\vec b) \; is \; AB = |\vec a-\vec b|\]
+                    \[\vec r = \frac{n \vec a + m \vec b}{m+n}. \; Mid \; point \; of AB = \frac{\vec a+ \vec b}{2}\]
+                    <strong>2. Scaler Product Of Two Vectors: </strong>
+                    \[\vec a. \vec b = |\vec a||\vec b|cos \theta, \; where |\vec a|, \; |\vec b| \; are \; magnitude \; of \; \vec a \; and \; \vec b \; respectively \; and \; \theta \; is \; angle \; between \; \vec a \; and \; \vec b\]
+                    \[A. \; i.i=j.j=k.k=1, \; \; \; i.j=j.k=k.i=0\]
+                    \[B. \; Projection \; of \; \vec a \; on \; \vec b \; = \frac{\vec a. \vec b}{|\vec b|}\]
+                    \[C. If \; \vec a = a_1i+a_2j+a_3k \; \; \& \; \; \vec b = b_1i+b_2j+b_3k \; \; then \; \; \vec a. \vec b = a_1b_1+a_2b_2+a_3b_3\]
+                    \[D. \; The \; angle \; \phi \; between \; \vec a \; \& \; \vec b \; is \; given \; by \; cos \phi = \frac{\vec a. \vec b}{|\vec a||\vec b|}, 0 \leq \phi \leq \pi\]
+                    \[E. \vec a. \vec b =0 \implies \vec a \perp \vec b\]
+                    <strong>3. Vector Product Of Two Vectors: </strong>
+                    \[A. \; If \vec a \; \& \; \vec b \; are \; two \; vectors \; \& \; \theta \; is \; the \; angle \; between \; them \; then \; \vec a \times \vec b = |\vec a||\vec b|sin \theta \vec n,\]
+                    \[where \; \vec n \; is \; the \; unit \; vector \; perpendicular \; to \; both \; \vec a \; \& \; \vec b \; such \; that \; \vec a, \; \vec b, \; \& \; \vec n \; forms \; a \; right \; handed \; screw \; system\]
+                    \[B. \; Geometrically \; |\vec a \times \vec b| = area \; of \; the \; parallelogram \; whose \; two \; adjacent \; sides \; are \; represented \; by \; \vec a \; \& \; \vec b\]
+                    \[C. \; \hat i \times \hat i = \hat j \times \hat j = \hat k \times \hat k = 0; \; \; \; \hat i \times \hat j= \hat k, \; \; \hat j \times \hat k = \hat i, \; \; \hat k \times \hat i = \hat j\]
+                    \[D. \; If \; \vec a = a_1 \hat i + a_2 \hat j + a_3 \hat k \; \; \& \; \; \vec b = b_1 \hat i + b_2 \hat j + b_3 \hat k \; then \]
+                    \[\vec a \times \vec b = \left|\begin{matrix}\hat i & \hat j & \hat k \\ a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3\end{matrix}\right|\]
+                    \[E. \; \vec a \times \vec b = 0 \implies \vec a \; and \; \vec b \; are \; paralllel\]
+                    \[(\vec a \neq 0, \; \vec b \neq 0) \; i.e. \; \vec a = K \vec b, \; where \; K \; is \; a \; scaler\]
+                    \[F. \; Unit \; vectors \; perpendicular \; to \; the \; plane \; of \; \vec a \; \& \; \vec b \; is \; \hat n = \pm \frac{\vec a \times \vec b}{|\vec a \times \vec b|}\]
+                    \[G. \; If \; \vec a, \; \vec b \; \& \; \vec c \; are \; the \; pv's \; of \; 3 \; points \; A, \; B, \; C \; then \; the \; vectors \; area \; of \; triangle \; ABC = \frac{1}{2} [\vec a \times \vec b + \vec b \times \vec c + \vec c \times \vec a]\]
+                    \[H. \; The \; points \; A, B, C \; are \; collinear \; if \; \vec a \times \vec b + \vec b \times \vec c + \vec c \times \vec a = 0\]
+                    \[I. \; Area \; of \; any \; quadrilateral \; whose \; diagonal \; vectors \; are \; \vec d_1 \; \& \; \vec d_2 \; is \; given \; by \; \frac{1}{2}| \vec d_1 \times \vec d_2|\]
+                    \[J. \; Lagrange's \; Identity: \; (\vec a \times \vec b)^2 = |\vec a|^2|\vec b|^2-(\vec a. \vec b)^2=\left|\begin{matrix} \vec a. \vec a & \vec a. \vec b \\ \vec a. \vec b & \vec b. \vec b\end{matrix}\right|\]
+                    <strong>4. Scalar Triple Product:</strong>
+                    
+                </p>
+            </div>
+            <div class="content0" id="dimension"></div>
+            <div class="content0" id="triangle"></div>
+            <div class="content0" id="inverse_trigono"></div>
+            <div class="content0" id="statistic"></div>
+            <div class="content0" id="resoning"></div>
+            <div class="content0" id="set"></div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</html>
